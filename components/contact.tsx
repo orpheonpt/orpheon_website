@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Phone } from "lucide-react"
 import Link from "next/link"
 import { useLanguage } from "@/lib/language-context"
 
@@ -23,7 +23,10 @@ export function Contact() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-base px-8 h-14 bg-transparent">
-              <Link href="#">{t.contact.bookCall}</Link>
+              <Link href="tel:+351000000000" className="gap-2">
+                <Phone className="w-4 h-4" />
+                {t.contact.bookCall}
+              </Link>
             </Button>
           </div>
 
@@ -36,7 +39,7 @@ export function Contact() {
             </div>
             <div>
               <p className="text-sm text-muted-foreground mb-2">{t.contact.phoneLabel}</p>
-              <Link href="tel:+351XXXXXXXXX" className="text-lg font-medium hover:text-primary transition-colors">
+              <Link href="tel:+351000000000" className="text-lg font-medium hover:text-primary transition-colors">
                 +351 XXX XXX XXX
               </Link>
             </div>

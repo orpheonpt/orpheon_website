@@ -4,6 +4,8 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
+const serviceIds = ["discovery", "design", "development", "webapps", "ecommerce", "support"]
+
 export function Services() {
   const { t } = useLanguage()
 
@@ -21,7 +23,7 @@ export function Services() {
           {t.services.items.map((service, index) => (
             <Link
               key={service.title}
-              href="#contacto"
+              href={`/servicos#${serviceIds[index]}`}
               className="group flex flex-col md:flex-row md:items-center justify-between py-8 border-b border-border hover:bg-muted/30 transition-colors px-4 -mx-4"
             >
               <div className="flex items-start gap-6 md:gap-8 flex-1">
@@ -40,7 +42,7 @@ export function Services() {
 
         <div className="mt-12 flex justify-end">
           <Link
-            href="#contacto"
+            href="/servicos"
             className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
           >
             {t.services.cta}

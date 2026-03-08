@@ -28,7 +28,7 @@ export const translations = {
     services: {
       title: "Serviços",
       subtitle: "Os nossos serviços são desenhados para ajudar negócios de todas as dimensões a superar os seus desafios únicos.",
-      cta: "Falar connosco",
+      cta: "Ver todos os serviços",
       items: [
         {
           title: "Discovery",
@@ -53,6 +53,73 @@ export const translations = {
         {
           title: "Suporte & Manutenção",
           description: "Acompanhamento contínuo, atualizações de segurança e evolução do projeto.",
+        },
+      ],
+    },
+    // Services Page
+    servicesPage: {
+      back: "Voltar ao início",
+      title: "Os nossos serviços",
+      subtitle: "Oferecemos um conjunto completo de serviços para transformar a tua ideia em realidade digital.",
+      cta: "Iniciar projeto",
+      includes: "O que inclui",
+      contactTitle: "Pronto para começar?",
+      contactSubtitle: "Entra em contacto connosco para discutir o teu projeto.",
+      contactCta: "Enviar email",
+      serviceDetails: [
+        {
+          features: [
+            "Análise de requisitos e objetivos",
+            "Pesquisa de mercado e concorrência",
+            "Definição de personas e user stories",
+            "Roadmap de desenvolvimento",
+            "Documentação técnica",
+          ],
+        },
+        {
+          features: [
+            "Wireframes e protótipos interativos",
+            "Design de interface (UI)",
+            "Design de experiência (UX)",
+            "Design system e componentes",
+            "Branding digital",
+          ],
+        },
+        {
+          features: [
+            "Websites responsivos e modernos",
+            "Landing pages de alta conversão",
+            "Otimização SEO técnica",
+            "Performance e Core Web Vitals",
+            "Integração com CMS",
+          ],
+        },
+        {
+          features: [
+            "Dashboards e painéis de controlo",
+            "Sistemas de gestão internos",
+            "Portais de cliente",
+            "APIs e integrações",
+            "Autenticação e permissões",
+          ],
+        },
+        {
+          features: [
+            "Lojas online completas",
+            "Integração com pagamentos",
+            "Gestão de stock automatizada",
+            "Integração com envios",
+            "Relatórios de vendas",
+          ],
+        },
+        {
+          features: [
+            "Manutenção mensal contínua",
+            "Atualizações de segurança",
+            "Backups regulares",
+            "Suporte técnico prioritário",
+            "Evolução e novas funcionalidades",
+          ],
         },
       ],
     },
@@ -471,7 +538,7 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
     services: {
       title: "Services",
       subtitle: "Our services are designed to help businesses of all sizes overcome their unique challenges.",
-      cta: "Get in touch",
+      cta: "View all services",
       items: [
         {
           title: "Discovery",
@@ -496,6 +563,73 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
         {
           title: "Support & Maintenance",
           description: "Continuous follow-up, security updates and project evolution.",
+        },
+      ],
+    },
+    // Services Page
+    servicesPage: {
+      back: "Back to home",
+      title: "Our services",
+      subtitle: "We offer a complete set of services to transform your idea into digital reality.",
+      cta: "Start a project",
+      includes: "What's included",
+      contactTitle: "Ready to start?",
+      contactSubtitle: "Get in touch with us to discuss your project.",
+      contactCta: "Send email",
+      serviceDetails: [
+        {
+          features: [
+            "Requirements and goals analysis",
+            "Market and competitor research",
+            "Personas and user stories definition",
+            "Development roadmap",
+            "Technical documentation",
+          ],
+        },
+        {
+          features: [
+            "Wireframes and interactive prototypes",
+            "Interface design (UI)",
+            "Experience design (UX)",
+            "Design system and components",
+            "Digital branding",
+          ],
+        },
+        {
+          features: [
+            "Responsive modern websites",
+            "High-conversion landing pages",
+            "Technical SEO optimization",
+            "Performance and Core Web Vitals",
+            "CMS integration",
+          ],
+        },
+        {
+          features: [
+            "Dashboards and control panels",
+            "Internal management systems",
+            "Customer portals",
+            "APIs and integrations",
+            "Authentication and permissions",
+          ],
+        },
+        {
+          features: [
+            "Complete online stores",
+            "Payment integration",
+            "Automated stock management",
+            "Shipping integration",
+            "Sales reports",
+          ],
+        },
+        {
+          features: [
+            "Continuous monthly maintenance",
+            "Security updates",
+            "Regular backups",
+            "Priority technical support",
+            "Evolution and new features",
+          ],
         },
       ],
     },

@@ -4,6 +4,13 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
+const benefitLinks = [
+  "/servicos#development",
+  "/servicos#discovery",
+  "/servicos#design",
+  "/servicos#support",
+]
+
 export function Benefits() {
   const { t } = useLanguage()
 
@@ -25,7 +32,7 @@ export function Benefits() {
                 <h3 className="text-xl md:text-2xl font-semibold mb-3">{benefit.title}</h3>
                 <p className="text-muted-foreground mb-4">{benefit.description}</p>
                 <Link
-                  href="#contacto"
+                  href={benefitLinks[index] || "/servicos"}
                   className="inline-flex items-center gap-2 text-sm text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity"
                 >
                   {benefit.link}

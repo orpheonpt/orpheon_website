@@ -53,38 +53,38 @@
 
 /* Dark mode as default via .dark class */
 .dark {
-  --background: oklch(0.11 0.005 260);
+  --background: oklch(0.16 0.005 260);
   --foreground: oklch(0.95 0 0);
-  --card: oklch(0.14 0.005 260);
+  --card: oklch(0.19 0.005 260);
   --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.14 0.005 260);
+  --popover: oklch(0.19 0.005 260);
   --popover-foreground: oklch(0.95 0 0);
   /* Using animated hue for primary */
   --primary: oklch(0.72 0.15 var(--hue));
   --primary-foreground: oklch(0.11 0.005 260);
-  --secondary: oklch(0.18 0.005 260);
+  --secondary: oklch(0.22 0.005 260);
   --secondary-foreground: oklch(0.95 0 0);
-  --muted: oklch(0.2 0.005 260);
+  --muted: oklch(0.24 0.005 260);
   --muted-foreground: oklch(0.65 0 0);
   --accent: oklch(0.72 0.15 var(--hue));
   --accent-foreground: oklch(0.11 0.005 260);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.25 0.005 260);
-  --input: oklch(0.18 0.005 260);
+  --border: oklch(0.28 0.005 260);
+  --input: oklch(0.22 0.005 260);
   --ring: oklch(0.72 0.15 var(--hue));
   --chart-1: oklch(0.72 0.15 var(--hue));
   --chart-2: oklch(0.65 0.12 180);
   --chart-3: oklch(0.55 0.1 220);
   --chart-4: oklch(0.75 0.1 160);
   --chart-5: oklch(0.6 0.15 200);
-  --sidebar: oklch(0.14 0.005 260);
+  --sidebar: oklch(0.19 0.005 260);
   --sidebar-foreground: oklch(0.95 0 0);
   --sidebar-primary: oklch(0.72 0.15 var(--hue));
-  --sidebar-primary-foreground: oklch(0.11 0.005 260);
-  --sidebar-accent: oklch(0.18 0.005 260);
+  --sidebar-primary-foreground: oklch(0.16 0.005 260);
+  --sidebar-accent: oklch(0.22 0.005 260);
   --sidebar-accent-foreground: oklch(0.95 0 0);
-  --sidebar-border: oklch(0.25 0.005 260);
+  --sidebar-border: oklch(0.28 0.005 260);
   --sidebar-ring: oklch(0.72 0.15 var(--hue));
 }
 
@@ -147,13 +147,8 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-/* Animated dot class for the Orpheon. logo */
+/* Animated dot class for the Orpheon. logo - inherits hue from root */
 .animated-dot {
-  color: oklch(0.72 0.15 var(--hue));
-  animation: hue-cycle 20s ease-in-out infinite;
-}
-
-:is(.dark) .animated-dot {
   color: oklch(0.72 0.15 var(--hue));
 }
 
