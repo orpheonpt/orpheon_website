@@ -106,8 +106,9 @@
 }
 
 @theme inline {
-  --font-sans: "Inter", "Inter Fallback", sans-serif;
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --font-sans: var(--font-sans, "Inter"), "Inter Fallback", sans-serif;
+  --font-heading: var(--font-heading, "Space Grotesk"), "Space Grotesk Fallback", sans-serif;
+  --font-mono: var(--font-mono, "Geist Mono"), "Geist Mono Fallback";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -170,4 +171,15 @@
   html {
     scroll-behavior: smooth;
   }
+}
+
+/* Heading font utility */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+/* Apply heading font to all headings by default */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
 }

@@ -1,12 +1,13 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
-import { Inter, Geist_Mono } from "next/font/google"
+import { Space_Grotesk, Inter, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { LanguageProvider } from "@/lib/language-context"
 import "./globals.css"
 
-const _inter = Inter({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const _spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-heading" })
+const _inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
+const _geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
   title: "Orpheon Studio | Websites e Plataformas que Dão Lucro",
@@ -27,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-PT" className="dark" suppressHydrationWarning>
-      <body className={`font-sans antialiased`}>
+      <body className={`${_spaceGrotesk.variable} ${_inter.variable} ${_geistMono.variable} font-sans antialiased`}>
         <LanguageProvider>{children}</LanguageProvider>
         <Analytics />
       </body>
