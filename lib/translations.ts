@@ -13,61 +13,46 @@ export const translations = {
     },
     // Hero
     hero: {
-      badge1: "Entrega rápida",
-      badge2: "Mensalidade previsível",
-      badge3: "Performance e segurança",
-      title: "O teu negócio merece um site",
-      titleHighlight: "rápido, bonito",
-      titleEnd: "e feito para converter.",
-      subtitle: 'Eu crio websites e plataformas à medida — e trato da manutenção mensal para nunca ficares "sem IT".',
-      cta1: "Pedir orçamento",
-      cta2: "Ver projetos",
-      stack: "Trabalho com",
-      stackEnd: "e integrações com APIs.",
+      title: "Construímos produtos digitais que fazem a diferença.",
+      subtitle: "Somos um estúdio de desenvolvimento web. Desenhamos e construímos websites, web apps e plataformas — e ficamos por cá para as manter. Uma equipa. Processo simples. Suporte a longo prazo.",
+      cta1: "Iniciar projeto",
+      cta2: "Ver trabalho",
+      stat1Value: "50+",
+      stat1Label: "Projetos entregues",
+      stat2Value: "5+",
+      stat2Label: "Anos de experiência",
+      stat3Value: "100%",
+      stat3Label: "Clientes satisfeitos",
     },
     // Services
     services: {
       title: "Serviços",
-      titleMuted: "(sem complicar)",
-      subtitle: "Escolhes o objetivo. Eu trato do resto — do design ao código, do deploy à manutenção.",
-      cta: "Quero isto",
+      subtitle: "Os nossos serviços são desenhados para ajudar negócios de todas as dimensões a superar os seus desafios únicos.",
+      cta: "Falar connosco",
       items: [
         {
-          title: "Websites Profissionais",
-          description: "Landing pages e sites institucionais com foco em conversão.",
-          features: [
-            "Landing pages e sites institucionais",
-            "Foco em conversão (contactos, leads, marcações)",
-            "Otimizados para mobile e velocidade",
-          ],
+          title: "Discovery",
+          description: "Análise de requisitos, pesquisa de utilizadores e definição de estratégia digital.",
         },
         {
-          title: "Lojas Online",
-          description: "E-commerce completo com todos os módulos necessários.",
-          features: [
-            "Catálogo, carrinho, pagamentos",
-            "Integrações com envios e faturação",
-            "Gestão de stock automatizada",
-          ],
+          title: "Design",
+          description: "UI/UX design focado em conversão, branding digital e protótipos interativos.",
         },
         {
-          title: "Plataformas e Backoffices",
-          description: "Sistemas de gestão interna personalizados.",
-          features: [
-            "Gestão interna (clientes, reservas, stocks)",
-            "Autenticação e permissões",
-            "Dashboards e relatórios",
-          ],
+          title: "Desenvolvimento Web",
+          description: "Websites modernos, rápidos e otimizados para SEO com as melhores tecnologias.",
         },
         {
-          title: "Integrações & Automações",
-          description: "Conecta sistemas e automatiza processos.",
-          features: ["APIs e formulários avançados", "Emails transacionais", "Automação de tarefas repetitivas"],
+          title: "Web Apps",
+          description: "Aplicações web complexas, dashboards e sistemas de gestão à medida.",
         },
         {
-          title: "Manutenção & Evolução",
-          description: "Acompanhamento contínuo do teu projeto.",
-          features: ["Correções, melhorias, segurança", "Backups regulares", "Suporte e acompanhamento mensal"],
+          title: "E-commerce",
+          description: "Lojas online completas com pagamentos, gestão de stock e integrações.",
+        },
+        {
+          title: "Suporte & Manutenção",
+          description: "Acompanhamento contínuo, atualizações de segurança e evolução do projeto.",
         },
       ],
     },
@@ -84,23 +69,29 @@ export const translations = {
     },
     // Benefits
     benefits: {
-      title: "O que ganhas com isto",
+      label: "O que nos diferencia",
+      title: "Curioso sobre tecnologia? Vamos conversar.",
+      subtitle: "Não seguimos apenas tendências. Usamos abordagens que realmente tornam os projetos melhores.",
       items: [
         {
-          title: "Mais leads",
-          description: "Formulários e CTAs bem colocados para converter visitantes em clientes.",
+          title: "Desenvolvimento Assistido por IA",
+          description: "Usamos ferramentas de IA para tarefas repetitivas enquanto developers seniores controlam a arquitetura e qualidade. Resultado: builds mais rápidos sem sacrificar a qualidade.",
+          link: "Ver como funciona",
         },
         {
-          title: "Site rápido",
-          description: "Performance otimizada e SEO técnico para melhor posicionamento.",
+          title: "Desenvolvimento Orientado a Specs",
+          description: "Definimos exatamente o que vamos construir antes de escrever código. Quatro domínios de validação. Zero suposições. É por isso que os nossos projetos não descarrilam.",
+          link: "Conhecer o processo",
         },
         {
-          title: "Sem dores de cabeça",
-          description: "Manutenção contínua — eu trato de tudo para tu focares no negócio.",
+          title: "Prototipagem Rápida",
+          description: "Testa a tua ideia com utilizadores reais antes de te comprometeres com desenvolvimento completo. Constrói um protótipo funcional em dias, não meses.",
+          link: "Saber mais",
         },
         {
-          title: "Escalável",
-          description: "Base preparada para crescer e evoluir para plataforma completa.",
+          title: "Os Teus Dados Estão Seguros",
+          description: "Seguimos as melhores práticas de segurança. Isso significa que cumprimos padrões rigorosos para gestão de segurança da informação.",
+          link: "Ver certificações",
         },
       ],
     },
@@ -222,28 +213,17 @@ export const translations = {
     },
     // Testimonials
     testimonials: {
-      title: "O que dizem",
-      items: [
-        {
-          name: "Maria Silva",
-          company: "Clínica Bem-Estar",
-          text: "O site ficou incrível e as marcações online aumentaram 40%. Recomendo a quem quer resultados.",
-        },
-        {
-          name: "João Santos",
-          company: "Consultoria JPS",
-          text: "Finalmente tenho um site profissional que reflete a qualidade do meu trabalho. Excelente acompanhamento.",
-        },
-        {
-          name: "Ana Costa",
-          company: "Imobiliária Costa",
-          text: "A plataforma de gestão de imóveis simplificou todo o nosso processo. Fantástico trabalho.",
-        },
-      ],
+      label: "O que dizem os nossos clientes",
+      featured: {
+        name: "Maria Silva",
+        role: "CEO — Clínica Bem-Estar",
+        text: "A equipa ajudou-nos a transformar o nosso website durante uma grande reformulação da empresa. Deram vida à nossa visão através de um processo de design fácil e flexível, e foram além do esperado para que pudéssemos lançar com sucesso. Recomendo vivamente.",
+      },
     },
     // FAQ
     faq: {
       title: "Perguntas frequentes",
+      subtitle: "Tudo o que precisas de saber sobre como trabalhamos e o que podes esperar.",
       items: [
         {
           question: "Quanto tempo demora?",
@@ -279,41 +259,34 @@ export const translations = {
     },
     // About
     about: {
-      title: "Um estúdio pequeno. Resultados grandes.",
-      text: "Sou fullstack web dev e trabalho com stack moderna para construir soluções rápidas, seguras e escaláveis. O meu foco é tirar complexidade do caminho: tu tratas do teu negócio, eu trato do digital.",
+      title: "O nosso propósito é ajudar organizações a pensar maior, mover mais rápido e construir futuros melhores.",
+      text: "Todos os dias, trabalhamos de perto com os nossos clientes como um guia e parceiro de confiança — transformando desafios complexos em direção clara e resultados reais e mensuráveis.",
+      cta: "Conhecer a nossa abordagem",
+      values: [
+        {
+          title: "Da estratégia à execução",
+          description: "Da estratégia à implementação e soluções digitais escaláveis, trazemos a combinação certa de consultoria e execução.",
+        },
+        {
+          title: "Know-how da indústria",
+          description: "Trazemos experiência prática e entrega comprovada em indústrias complexas.",
+        },
+        {
+          title: "Impacto exponencial",
+          description: "Colaboramos com um ecossistema selecionado de parceiros tecnológicos para co-criar soluções práticas e de alto impacto.",
+        },
+      ],
     },
     // Contact
     contact: {
-      title: "Vamos falar",
-      subtitle: "Diz-me o que precisas. Eu respondo com uma proposta clara.",
-      form: {
-        name: "Nome",
-        namePlaceholder: "O teu nome",
-        email: "Email",
-        emailPlaceholder: "email@exemplo.com",
-        phone: "Telefone (opcional)",
-        phonePlaceholder: "+351 XXX XXX XXX",
-        company: "Empresa",
-        companyPlaceholder: "Nome da empresa",
-        need: "O que precisas?",
-        needPlaceholder: "Seleciona uma opção",
-        needOptions: {
-          website: "Website",
-          store: "Loja Online",
-          platform: "Plataforma",
-          maintenance: "Manutenção",
-          other: "Outro",
-        },
-        message: "Mensagem",
-        messagePlaceholder: "Conta-me mais sobre o teu projeto...",
-        submit: "Enviar pedido",
-      },
-      quickContacts: "Contactos rápidos",
-      whatsapp: "WhatsApp",
+      title: "Pronto para começar?",
+      subtitle: "Quer tenhas um projeto claro em mente ou apenas uma ideia que precisa de ser moldada, estamos aqui para ajudar.",
+      cta: "Iniciar um projeto",
+      bookCall: "Ou liga-nos diretamente",
+      emailLabel: "Email",
+      phoneLabel: "Telefone",
+      locationLabel: "Localização",
       location: "Portugal (remoto)",
-      call15: "Chamada de 15 min",
-      callSubtitle: "Sem compromisso",
-      bookCall: "Marcar chamada",
     },
     // Footer
     footer: {
@@ -483,56 +456,46 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
       badge3: "Performance + security",
       title: "Your business deserves a",
       titleHighlight: "fast, beautiful",
-      titleEnd: "website built to convert.",
-      subtitle: 'I create custom websites and platforms — and handle monthly maintenance so you never go "without IT".',
-      cta1: "Get a quote",
-      cta2: "View projects",
-      stack: "I work with",
-      stackEnd: "and API integrations.",
+      title: "We build digital products that make a difference.",
+      subtitle: "We're a web development studio. We design and build websites, web apps and platforms — and we stick around to maintain them. One team. Simple process. Long-term support.",
+      cta1: "Start a project",
+      cta2: "See our work",
+      stat1Value: "50+",
+      stat1Label: "Projects delivered",
+      stat2Value: "5+",
+      stat2Label: "Years of experience",
+      stat3Value: "100%",
+      stat3Label: "Satisfied clients",
     },
     // Services
     services: {
       title: "Services",
-      titleMuted: "(no complications)",
-      subtitle: "You choose the goal. I handle the rest — from design to code, from deployment to maintenance.",
-      cta: "I want this",
+      subtitle: "Our services are designed to help businesses of all sizes overcome their unique challenges.",
+      cta: "Get in touch",
       items: [
         {
-          title: "Professional Websites",
-          description: "Landing pages and corporate sites focused on conversion.",
-          features: [
-            "Landing pages and corporate sites",
-            "Focused on conversion (contacts, leads, bookings)",
-            "Optimized for mobile and speed",
-          ],
+          title: "Discovery",
+          description: "Requirements analysis, user research and digital strategy definition.",
         },
         {
-          title: "Online Stores",
-          description: "Complete e-commerce with all necessary modules.",
-          features: [
-            "Catalog, cart, payments",
-            "Integrations with shipping and invoicing",
-            "Automated stock management",
-          ],
+          title: "Design",
+          description: "Conversion-focused UI/UX design, digital branding and interactive prototypes.",
         },
         {
-          title: "Platforms & Backoffices",
-          description: "Custom internal management systems.",
-          features: [
-            "Internal management (clients, bookings, stock)",
-            "Authentication and permissions",
-            "Dashboards and reports",
-          ],
+          title: "Web Development",
+          description: "Modern, fast websites optimized for SEO with the best technologies.",
         },
         {
-          title: "Integrations & Automations",
-          description: "Connect systems and automate processes.",
-          features: ["APIs and advanced forms", "Transactional emails", "Automation of repetitive tasks"],
+          title: "Web Apps",
+          description: "Complex web applications, dashboards and custom management systems.",
         },
         {
-          title: "Maintenance & Evolution",
-          description: "Continuous support for your project.",
-          features: ["Fixes, improvements, security", "Regular backups", "Monthly support and follow-up"],
+          title: "E-commerce",
+          description: "Complete online stores with payments, stock management and integrations.",
+        },
+        {
+          title: "Support & Maintenance",
+          description: "Continuous follow-up, security updates and project evolution.",
         },
       ],
     },
@@ -549,23 +512,29 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
     },
     // Benefits
     benefits: {
-      title: "What you get",
+      label: "What sets us apart",
+      title: "Curious about tech? Let's Talk.",
+      subtitle: "We don't just follow trends. We use approaches that actually make projects better.",
       items: [
         {
-          title: "More leads",
-          description: "Well-placed forms and CTAs to convert visitors into customers.",
+          title: "AI-Assisted Development",
+          description: "We use AI tools to handle repetitive development tasks while senior developers control architecture and quality. The result: faster builds without sacrificing quality.",
+          link: "See how it works",
         },
         {
-          title: "Fast site",
-          description: "Optimized performance and technical SEO for better ranking.",
+          title: "Spec-Driven Development",
+          description: "We define exactly what we're building before writing code. Four validation domains. Zero assumptions. This is why our projects don't go sideways mid-build.",
+          link: "Learn about our process",
         },
         {
-          title: "No headaches",
-          description: "Continuous maintenance — I handle everything so you can focus on your business.",
+          title: "Rapid Prototyping",
+          description: "Test your idea with real users before committing to full development. Build a working prototype in days, not months.",
+          link: "Learn more",
         },
         {
-          title: "Scalable",
-          description: "Foundation ready to grow and evolve into a complete platform.",
+          title: "Your Data is Safe",
+          description: "We follow security best practices. That means we meet rigorous standards for information security management.",
+          link: "See certifications",
         },
       ],
     },
@@ -687,28 +656,17 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
     },
     // Testimonials
     testimonials: {
-      title: "What they say",
-      items: [
-        {
-          name: "Maria Silva",
-          company: "Wellness Clinic",
-          text: "The site looks amazing and online bookings increased by 40%. I recommend it to anyone who wants results.",
-        },
-        {
-          name: "João Santos",
-          company: "JPS Consulting",
-          text: "I finally have a professional site that reflects the quality of my work. Excellent support.",
-        },
-        {
-          name: "Ana Costa",
-          company: "Costa Real Estate",
-          text: "The property management platform simplified our entire process. Fantastic work.",
-        },
-      ],
+      label: "What our clients say",
+      featured: {
+        name: "Maria Silva",
+        role: "CEO — Wellness Clinic",
+        text: "The team helped us transform our website during a major company rebrand. They brought our vision to life through an easy, flexible design process and went above and beyond so we could launch successfully. I highly recommend them.",
+      },
     },
     // FAQ
     faq: {
       title: "Frequently asked questions",
+      subtitle: "Everything you need to know about how we work and what to expect.",
       items: [
         {
           question: "How long does it take?",
@@ -744,41 +702,34 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
     },
     // About
     about: {
-      title: "A small studio. Big results.",
-      text: "I'm a fullstack web dev working with modern stack to build fast, secure, and scalable solutions. My focus is removing complexity: you handle your business, I handle the digital.",
+      title: "Our purpose is to help organizations think bigger, move faster, and build better futures.",
+      text: "Every day, we partner closely with our clients as a trusted guide and challenger — turning complex challenges into clear direction and real, measurable outcomes.",
+      cta: "Explore our approach",
+      values: [
+        {
+          title: "From strategy to execution",
+          description: "From strategy to AI implementation and scalable digital solutions, we bring together the right mix of advisory and execution.",
+        },
+        {
+          title: "Industry know-how",
+          description: "We bring hands-on experience and proven delivery across complex industries.",
+        },
+        {
+          title: "Exponential impact",
+          description: "We collaborate with a carefully selected ecosystem of technology partners to co-create practical, high-impact solutions.",
+        },
+      ],
     },
     // Contact
     contact: {
-      title: "Let's talk",
-      subtitle: "Tell me what you need. I'll respond with a clear proposal.",
-      form: {
-        name: "Name",
-        namePlaceholder: "Your name",
-        email: "Email",
-        emailPlaceholder: "email@example.com",
-        phone: "Phone (optional)",
-        phonePlaceholder: "+351 XXX XXX XXX",
-        company: "Company",
-        companyPlaceholder: "Company name",
-        need: "What do you need?",
-        needPlaceholder: "Select an option",
-        needOptions: {
-          website: "Website",
-          store: "Online Store",
-          platform: "Platform",
-          maintenance: "Maintenance",
-          other: "Other",
-        },
-        message: "Message",
-        messagePlaceholder: "Tell me more about your project...",
-        submit: "Send request",
-      },
-      quickContacts: "Quick contacts",
-      whatsapp: "WhatsApp",
+      title: "Ready to Start?",
+      subtitle: "Whether you have a clear project in mind or just an idea that needs shaping, we're here to help.",
+      cta: "Start a project",
+      bookCall: "Or call us directly",
+      emailLabel: "Email",
+      phoneLabel: "Phone",
+      locationLabel: "Location",
       location: "Portugal (remote)",
-      call15: "15 min call",
-      callSubtitle: "No commitment",
-      bookCall: "Book a call",
     },
     // Footer
     footer: {

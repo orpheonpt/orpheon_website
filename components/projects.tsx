@@ -1,26 +1,13 @@
 "use client"
 
-import { useState } from "react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ExternalLink, FileText } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { projects } from "@/lib/projects-data"
 import { useLanguage } from "@/lib/language-context"
 
 export function Projects() {
-  const [activeFilter, setActiveFilter] = useState("all")
-  const { t, language } = useLanguage()
-
-  const filters = [
-    { label: t.projects.filterAll, value: "all" },
-    { label: t.projects.filterWebsites, value: "website" },
-    { label: t.projects.filterStores, value: "loja" },
-    { label: t.projects.filterPlatforms, value: "plataforma" },
-  ]
-
-  const filteredProjects = activeFilter === "all" ? projects : projects.filter((p) => p.category === activeFilter)
+  const { t } = useLanguage()
 
   // Get translated project data
   const getProjectTitle = (projectId: string) => {
@@ -33,74 +20,56 @@ export function Projects() {
     return translatedProject?.description || projects.find((p) => p.id === projectId)?.description || ""
   }
 
+  // Show only first 3 projects
+  const displayProjects = projects.slice(0, 3)
+
   return (
-    <section id="projetos" className="py-24 lg:py-32 bg-secondary/30">
+    <section id="projetos" className="py-24 lg:py-32 border-t border-border">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{t.projects.title}</h2>
-          <p className="text-lg text-muted-foreground">{t.projects.subtitle}</p>
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 mb-16">
+          <div className="lg:col-span-5">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">{t.projects.title}</h2>
+            <p className="text-lg text-muted-foreground">{t.projects.subtitle}</p>
+          </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {filters.map((filter) => (
-            <Button
-              key={filter.value}
-              variant={activeFilter === filter.value ? "default" : "outline"}
-              size="sm"
-              onClick={() => setActiveFilter(filter.value)}
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {displayProjects.map((project) => (
+            <Link
+              key={project.id}
+              href={`/projetos/${project.id}`}
+              className="group block"
             >
-              {filter.label}
-            </Button>
-          ))}
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {filteredProjects.map((project) => (
-            <Card
-              key={project.title}
-              className="group bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col"
-            >
-              <div className="aspect-video bg-secondary/50 relative flex-shrink-0">
-                <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/50">
-                  <FileText className="w-12 h-12" />
-                </div>
+              <div className="aspect-[4/3] bg-muted/30 rounded-xl mb-6 overflow-hidden relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/20 group-hover:from-primary/10 group-hover:to-primary/30 transition-colors" />
               </div>
-              <CardContent className="pt-6 flex flex-col flex-1">
-                <h3 className="text-lg font-semibold mb-2">{getProjectTitle(project.id)}</h3>
-                <p className="text-sm text-muted-foreground mb-4">{getProjectDescription(project.id)}</p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="text-xs">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-                <div className="flex flex-col gap-2 mt-auto items-center">
-                  <Button asChild variant="outline" size="sm" className="w-full bg-transparent">
-                    <Link href={`/projetos/${project.id}`} className="gap-1.5">
-                      <FileText className="w-4 h-4" />
-                      {t.projects.caseStudy}
-                    </Link>
-                  </Button>
-                  <Button asChild size="sm" className="w-full">
-                    <Link href="#" className="gap-1.5">
-                      <ExternalLink className="w-4 h-4" />
-                      {t.projects.openDemo}
-                    </Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+              <div className="flex flex-wrap gap-2 mb-3">
+                {project.tags.slice(0, 2).map((tag) => (
+                  <Badge key={tag} variant="secondary" className="text-xs">
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
+              <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                {getProjectTitle(project.id)}
+              </h3>
+              <p className="text-muted-foreground text-sm line-clamp-2">{getProjectDescription(project.id)}</p>
+              <span className="inline-flex items-center gap-2 text-sm text-primary font-medium mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                {t.projects.caseStudy}
+                <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Button asChild variant="outline" size="lg">
-            <Link href="/projetos">{t.projects.viewAll}</Link>
-          </Button>
-          <Button asChild size="lg">
-            <Link href="#contacto">{t.projects.wantProject}</Link>
-          </Button>
+        <div className="flex justify-center">
+          <Link
+            href="/projetos"
+            className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+          >
+            {t.projects.viewAll}
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
     </section>

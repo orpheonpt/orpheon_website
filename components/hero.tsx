@@ -2,8 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Zap, Calendar, Shield } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
 export function Hero() {
@@ -11,55 +10,42 @@ export function Hero() {
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center pt-20">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background" />
-
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
-            <Badge variant="secondary" className="gap-1.5 px-3 py-1.5 text-sm">
-              <Zap className="w-3.5 h-3.5 text-primary" />
-              {t.hero.badge1}
-            </Badge>
-            <Badge variant="secondary" className="gap-1.5 px-3 py-1.5 text-sm">
-              <Calendar className="w-3.5 h-3.5 text-primary" />
-              {t.hero.badge2}
-            </Badge>
-            <Badge variant="secondary" className="gap-1.5 px-3 py-1.5 text-sm">
-              <Shield className="w-3.5 h-3.5 text-primary" />
-              {t.hero.badge3}
-            </Badge>
-          </div>
-
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight mb-6 text-balance">
-            {t.hero.title} <span className="text-primary">{t.hero.titleHighlight}</span> {t.hero.titleEnd}
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="max-w-5xl">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight mb-8 leading-[1.1]">
+            {t.hero.title}
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 text-pretty">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-12 leading-relaxed">
             {t.hero.subtitle}
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button asChild size="lg" className="text-base px-8">
+          <div className="flex flex-col sm:flex-row items-start gap-4 mb-16">
+            <Button asChild size="lg" className="text-base px-8 h-14">
               <Link href="#contacto" className="gap-2">
                 {t.hero.cta1}
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-base px-8 bg-transparent">
+            <Button asChild variant="outline" size="lg" className="text-base px-8 h-14 bg-transparent">
               <Link href="#projetos">{t.hero.cta2}</Link>
             </Button>
           </div>
 
-          <p className="text-sm text-muted-foreground">
-            {t.hero.stack} <span className="text-foreground font-medium">React, Node, PHP, MySQL</span>{" "}
-            {t.hero.stackEnd}
-          </p>
-        </div>
-      </div>
-
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center pt-2">
-          <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" />
+          <div className="flex flex-wrap gap-x-12 gap-y-4 text-sm text-muted-foreground border-t border-border pt-8">
+            <div>
+              <span className="text-3xl md:text-4xl font-bold text-foreground block">{t.hero.stat1Value}</span>
+              <span>{t.hero.stat1Label}</span>
+            </div>
+            <div>
+              <span className="text-3xl md:text-4xl font-bold text-foreground block">{t.hero.stat2Value}</span>
+              <span>{t.hero.stat2Label}</span>
+            </div>
+            <div>
+              <span className="text-3xl md:text-4xl font-bold text-foreground block">{t.hero.stat3Value}</span>
+              <span>{t.hero.stat3Label}</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
