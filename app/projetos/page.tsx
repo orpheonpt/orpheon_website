@@ -75,11 +75,9 @@ export default function ProjectsPage() {
                           {t.projects.caseStudy}
                         </Link>
                       </Button>
-                      <Button asChild size="sm" className="w-full">
-                        <Link href="#" className="gap-1.5">
-                          <ExternalLink className="w-4 h-4" />
-                          {t.projects.openDemo}
-                        </Link>
+                      <Button size="sm" className="w-full gap-1.5" disabled>
+                        <ExternalLink className="w-4 h-4" />
+                        {t.projects.openDemo}
                       </Button>
                     </div>
                   </CardContent>

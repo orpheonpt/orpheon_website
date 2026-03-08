@@ -15,20 +15,33 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguageState] = useState<Language>("pt")
 
   useEffect(() => {
-    const stored = localStorage.getItem("language") as Language | null
-    if (stored && (stored === "pt" || stored === "en")) {
-      setLanguageState(stored)
+    try {
+      const stored = localStorage.getItem("language") as Language | null
+      if (stored && (stored === "pt" || stored === "en")) {
+        setLanguageState(stored)
+      }
+    } catch {
+      // localStorage not available
     }
   }, [])
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang)
-    localStorage.setItem("language", lang)
-    document.documentElement.lang = lang === "pt" ? "pt-PT" : "en"
+    try {
+      localStorage.setItem("language", lang)
+    } catch {
+      // localStorage not available
+    }
+    if (typeof document !== "undefined") {
+      document.documentElement.lang = lang === "pt" ? "pt-PT" : "en"
+    }
   }
 
+  // Always provide the translation, even before hydration
+  const currentTranslations = translations[language]
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t: translations[language] }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t: currentTranslations }}>
       {children}
     </LanguageContext.Provider>
   )

@@ -1,6 +1,6 @@
 "use client"
 
-import { notFound, useParams } from "next/navigation"
+import { useParams } from "next/navigation"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -20,7 +20,20 @@ export default function CaseStudyPage() {
   const translatedProject = t.projectsData.find((p) => p.id === id)
 
   if (!project || !translatedProject) {
-    notFound()
+    return (
+      <>
+        <Header />
+        <main className="min-h-screen pt-20 flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-2xl font-bold mb-4">{t.projects.notFound}</h1>
+            <Button asChild>
+              <Link href="/projetos">{t.caseStudy.backToProjects}</Link>
+            </Button>
+          </div>
+        </main>
+        <Footer />
+      </>
+    )
   }
 
   return (
@@ -137,11 +150,9 @@ export default function CaseStudyPage() {
                     <Button asChild size="lg">
                       <Link href="/#contacto">{t.caseStudy.requestQuote}</Link>
                     </Button>
-                    <Button asChild variant="outline" size="lg">
-                      <Link href="#" className="gap-2">
-                        <ExternalLink className="w-4 h-4" />
-                        {t.caseStudy.viewDemo}
-                      </Link>
+                    <Button variant="outline" size="lg" className="gap-2" disabled>
+                      <ExternalLink className="w-4 h-4" />
+                      {t.caseStudy.viewDemo}
                     </Button>
                   </div>
                 </CardContent>
