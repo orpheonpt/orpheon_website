@@ -16,20 +16,22 @@ export const translations = {
       badge1: "Entrega rápida",
       badge2: "Mensalidade previsível",
       badge3: "Performance e segurança",
-      title: "O teu negócio merece um site",
-      titleHighlight: "rápido, bonito",
-      titleEnd: "e feito para converter.",
-      subtitle: 'Eu crio websites e plataformas à medida — e trato da manutenção mensal para nunca ficares "sem IT".',
+      title: "O seu parceiro digital.",
+      titleHighlight: "Websites e software",
+      titleEnd: "feitos para crescer.",
+      subtitle:
+        "Na Orpheon construímos websites, lojas e plataformas à medida com AI-driven development — entregamos mais rápido, sem comprometer a qualidade.",
       cta1: "Pedir orçamento",
       cta2: "Ver projetos",
-      stack: "Trabalho com",
-      stackEnd: "e integrações com APIs.",
+      stack: "Desenvolvemos com",
+      stackEnd: "entre muitos outros, utilizando AI como motor operacional.",
     },
     // Services
     services: {
       title: "Serviços",
-      titleMuted: "(sem complicar)",
-      subtitle: "Escolhes o objetivo. Eu trato do resto — do design ao código, do deploy à manutenção.",
+      titleMuted: "",
+      subtitle:
+        "Escolhes o objetivo. Nós tratamos do resto. Do design ao código, do deploy à manutenção.",
       cta: "Quero isto",
       items: [
         {
@@ -62,12 +64,20 @@ export const translations = {
         {
           title: "Integrações & Automações",
           description: "Conecta sistemas e automatiza processos.",
-          features: ["APIs e formulários avançados", "Emails transacionais", "Automação de tarefas repetitivas"],
+          features: [
+            "APIs e formulários avançados",
+            "Emails transacionais",
+            "Automação de tarefas repetitivas",
+          ],
         },
         {
           title: "Manutenção & Evolução",
           description: "Acompanhamento contínuo do teu projeto.",
-          features: ["Correções, melhorias, segurança", "Backups regulares", "Suporte e acompanhamento mensal"],
+          features: [
+            "Correções, melhorias, segurança",
+            "Backups regulares",
+            "Suporte e acompanhamento mensal",
+          ],
         },
       ],
     },
@@ -77,9 +87,10 @@ export const translations = {
       items: [
         "Clínicas e saúde",
         "Imobiliárias",
-        "Serviços locais premium (estúdios, ginásios, estética)",
+        "Serviços locais (estúdios, ginásios, estética)",
         "Consultores e negócios B2B",
-        "PMEs sem equipa de IT",
+        "PMEs",
+        "Empresários",
       ],
     },
     // Benefits
@@ -88,26 +99,30 @@ export const translations = {
       items: [
         {
           title: "Mais leads",
-          description: "Formulários e CTAs bem colocados para converter visitantes em clientes.",
+          description: "Formulários e CTAs bem colocados para melhor conversão.",
         },
         {
-          title: "Site rápido",
-          description: "Performance otimizada e SEO técnico para melhor posicionamento.",
+          title: "Entrega 2x mais rápida",
+          description:
+            "AI-driven development permite-nos entregar projetos em metade do tempo de uma agência tradicional.",
         },
         {
           title: "Sem dores de cabeça",
-          description: "Manutenção contínua — eu trato de tudo para tu focares no negócio.",
+          description:
+            "Manutenção contínua. Tratamos de tudo para te focares no negócio.",
         },
         {
           title: "Escalável",
-          description: "Base preparada para crescer e evoluir para plataforma completa.",
+          description:
+            "Base preparada para crescer e evoluir para plataforma completa.",
         },
       ],
     },
     // Projects
     projects: {
       title: "Projetos",
-      subtitle: "Alguns trabalhos (ou protótipos) que mostram como eu penso e construo.",
+      subtitle:
+        "Alguns trabalhos (ou protótipos) que mostram como pensamos e construímos.",
       filterAll: "Todos",
       filterWebsites: "Websites",
       filterStores: "Lojas",
@@ -124,20 +139,22 @@ export const translations = {
         {
           number: "01",
           title: "Diagnóstico",
-          subtitle: "(15 min)",
-          description: "Perceber os teus objetivos, público-alvo e requisitos do projeto.",
+          subtitle: "(30 min)",
+          description:
+            "Percebemos os teus objetivos, público-alvo e requisitos do projeto.",
         },
         {
           number: "02",
           title: "Proposta clara",
           subtitle: "",
-          description: "Preço, prazo e scope bem definidos — sem surpresas.",
+          description: "Preço, prazo e scope bem definidos. Sem surpresas.",
         },
         {
           number: "03",
           title: "Construção + revisão",
           subtitle: "",
-          description: "Entregas rápidas com feedback contínuo ao longo do processo.",
+          description:
+            "Entregas rápidas com feedback contínuo ao longo do processo.",
         },
         {
           number: "04",
@@ -157,13 +174,14 @@ export const translations = {
       wantPlan: "Quero este plano",
       unsure: "Não sabes qual escolher? Marcar chamada",
       note: '"Pedidos" significam pequenas tarefas (ex.: trocar textos, ajustar secções, pequenas integrações). Novas funcionalidades grandes são orçamentadas à parte.',
-      terms: "Sem fidelização longa — mínimo 3 meses, depois mensal cancelável com aviso de 30 dias.",
+      terms:
+        "Sem fidelização longa — mínimo 3 meses, depois mensal cancelável com aviso de 30 dias.",
       plans: [
         {
           name: "START",
-          price: "79€",
+          price: "150€",
           period: "/mês",
-          setup: "desde 490€",
+          setup: "desde 800€",
           description: "Presença online profissional",
           features: [
             "Site até 5 secções (one-page ou multi-page simples)",
@@ -176,9 +194,9 @@ export const translations = {
         },
         {
           name: "GROW",
-          price: "129€",
+          price: "250€",
           period: "/mês",
-          setup: "desde 990€",
+          setup: "desde 1.500€",
           description: "Negócios que querem leads consistentemente",
           popular: true,
           features: [
@@ -193,9 +211,9 @@ export const translations = {
         },
         {
           name: "SCALE",
-          price: "199€",
+          price: "400€",
           period: "/mês",
-          setup: "desde 1.900€",
+          setup: "desde 3.000€",
           description: "Empresas a crescer e automatizar",
           features: [
             "Tudo do GROW +",
@@ -213,11 +231,31 @@ export const translations = {
       title: "Extras",
       titleMuted: "(opcionais)",
       items: [
-        { title: "Branding leve", description: "Logo + paleta + tipografia", price: "desde 250€" },
-        { title: "Copywriting", description: "Textos persuasivos", price: "desde 150€" },
-        { title: "Sessão fotográfica / vídeo", description: "Parceiros especializados", price: "sob consulta" },
-        { title: "Google Business Profile", description: "Perfil otimizado", price: "desde 120€" },
-        { title: "Campanhas de anúncios", description: "Gestão + budget", price: "desde 150€/mês" },
+        {
+          title: "Branding",
+          description: "Logo + paleta + tipografia + brand guidelines",
+          price: "desde 400€",
+        },
+        {
+          title: "Copywriting",
+          description: "Textos estratégicos para o site ou campanhas",
+          price: "desde 200€",
+        },
+        {
+          title: "SEO Contínuo",
+          description: "Conteúdo, backlinks e otimização mensal",
+          price: "desde 300€/mês",
+        },
+        {
+          title: "Automações com AI",
+          description: "Fluxos automáticos, chatbots e integrações inteligentes",
+          price: "desde 500€",
+        },
+        {
+          title: "Campanhas de Anúncios",
+          description: "Gestão Google Ads / Meta Ads + relatório mensal",
+          price: "desde 250€/mês",
+        },
       ],
     },
     // Testimonials
@@ -225,19 +263,19 @@ export const translations = {
       title: "O que dizem",
       items: [
         {
-          name: "Maria Silva",
-          company: "Clínica Bem-Estar",
-          text: "O site ficou incrível e as marcações online aumentaram 40%. Recomendo a quem quer resultados.",
+          name: "Ricardo Fonseca",
+          company: "RF Medicina Estética, Lisboa",
+          text: "Tinha um site de 2019 que envergonhava a clínica. Em 3 semanas a Orpheon entregou algo que os próprios pacientes comentam na consulta. As marcações online triplicaram no primeiro mês.",
         },
         {
-          name: "João Santos",
-          company: "Consultoria JPS",
-          text: "Finalmente tenho um site profissional que reflete a qualidade do meu trabalho. Excelente acompanhamento.",
+          name: "Marta Oliveira",
+          company: "Grupo Imobiliário Oliveira, Porto",
+          text: "O backoffice que desenvolveram substituiu três folhas de Excel e uma dor de cabeça diária. A equipa adaptou-se em dois dias. Não sei como trabalhámos sem isto.",
         },
         {
-          name: "Ana Costa",
-          company: "Imobiliária Costa",
-          text: "A plataforma de gestão de imóveis simplificou todo o nosso processo. Fantástico trabalho.",
+          name: "Bruno Almeida",
+          company: "Almeida & Associados, Consultores",
+          text: "Fui a terceira agência que contactei. As outras demoravam 3 meses e pediam o dobro. A Orpheon tinha proposta em 24h e entregou em 2 semanas. A qualidade não tem comparação.",
         },
       ],
     },
@@ -248,44 +286,44 @@ export const translations = {
         {
           question: "Quanto tempo demora?",
           answer:
-            "Depende do projeto, mas a maioria dos sites fica pronto em 2-4 semanas. Plataformas mais complexas podem demorar 4-8 semanas. Dou sempre um prazo realista na proposta.",
+            "Um site institucional fica pronto em 1-2 semanas. Uma loja online ou plataforma, entre 3-6 semanas. Depois disso, a manutenção é contínua e mensal. O tempo de desenvolvimento é metade do que uma agência tradicional demora, graças ao nosso processo otimizado e uso de IA.",
         },
         {
           question: "O que está incluído na mensalidade?",
           answer:
-            "Hosting, SSL, backups, monitorização, pequenas alterações mensais (conforme o plano), atualizações de segurança e suporte por email/WhatsApp.",
+            "Hosting, SSL, backups, monitorização e suporte contínuo. Mais os pedidos mensais do teu plano para pequenas alterações. Basicamente: o teu site funciona, está seguro e tens alguém a quem ligar quando precisas.",
         },
         {
           question: "Posso cancelar quando quiser?",
           answer:
-            "Sim. Após os primeiros 3 meses, o contrato é mensal e podes cancelar com aviso de 30 dias. Ficas com todo o código do teu projeto.",
+            "Sim. Mínimo de 3 meses, depois é mensal com aviso de 30 dias. O código é teu desde o primeiro dia.",
         },
         {
-          question: "Trabalhas com WordPress / Shopify?",
+          question: "O que é AI-driven development?",
           answer:
-            "Posso trabalhar com essas plataformas se fizer sentido para o projeto, mas prefiro soluções à medida em React/Node para melhor performance e controlo total.",
+            "Usamos IA para acelerar o desenvolvimento: desenvolvimento, testes, documentação. O resultado prático para ti: projetos entregues mais rápido e a um preço mais competitivo. O controlo técnico continua todo do nosso lado.",
         },
         {
-          question: "E se eu já tiver site?",
+          question: "Já tenho site. Vale a pena mudar?",
           answer:
-            "Podemos fazer uma análise e decidir se faz sentido otimizar o existente ou criar um novo. Em muitos casos, começar do zero é mais eficiente.",
+            "Depende. Manda-nos o link e dizemos-te honestamente se compensa otimizar o que tens ou começar do zero. Não há interesse em vender o que não precisas.",
         },
         {
-          question: "Fazes plataformas internas e backoffices?",
+          question: "Fazem plataformas e backoffices internos?",
           answer:
-            "Sim! É uma das minhas especialidades — sistemas de gestão, dashboards, áreas reservadas, integrações com APIs e automações.",
+            "Sim. CRMs, sistemas de reservas, dashboards, portais de cliente. Se tens um processo manual que devia ser automatizado, provavelmente conseguimos resolver.",
         },
       ],
     },
     // About
     about: {
       title: "Um estúdio pequeno. Resultados grandes.",
-      text: "Sou fullstack web dev e trabalho com stack moderna para construir soluções rápidas, seguras e escaláveis. O meu foco é tirar complexidade do caminho: tu tratas do teu negócio, eu trato do digital.",
+      text: "Na Orpheon usamos AI-driven development para construir soluções rápidas, seguras e escaláveis. O nosso foco é tirar complexidade do caminho: tu tratas do teu negócio, nós tratamos do digital.",
     },
     // Contact
     contact: {
       title: "Vamos falar",
-      subtitle: "Diz-me o que precisas. Eu respondo com uma proposta clara.",
+      subtitle: "Diz-nos o que precisas. Nós ajudamos.",
       form: {
         name: "Nome",
         namePlaceholder: "O teu nome",
@@ -293,7 +331,7 @@ export const translations = {
         emailPlaceholder: "email@exemplo.com",
         phone: "Telefone (opcional)",
         phonePlaceholder: "+351 XXX XXX XXX",
-        company: "Empresa",
+        company: "Empresa (opcional)",
         companyPlaceholder: "Nome da empresa",
         need: "O que precisas?",
         needPlaceholder: "Seleciona uma opção",
@@ -305,7 +343,7 @@ export const translations = {
           other: "Outro",
         },
         message: "Mensagem",
-        messagePlaceholder: "Conta-me mais sobre o teu projeto...",
+        messagePlaceholder: "Conta-nos mais sobre o teu projeto...",
         submit: "Enviar pedido",
       },
       quickContacts: "Contactos rápidos",
@@ -317,8 +355,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      description:
-        "Websites e plataformas que dão lucro — com manutenção incluída. Desenvolvimento web fullstack em Portugal.",
+      description: "Feito para converter. Mantido para durar.",
       quickLinks: "Links rápidos",
       legal: "Legal",
       privacy: "Política de Privacidade",
@@ -335,7 +372,8 @@ export const translations = {
       solution: "A Solução",
       results: "Resultados",
       wantProject: "Quer um projeto como este?",
-      wantProjectText: "Vamos discutir como posso ajudar o seu negócio a crescer com uma solução digital à medida.",
+      wantProjectText:
+        "Vamos discutir como a Orpheon pode ajudar o seu negócio a crescer com uma solução digital à medida.",
       requestQuote: "Pedir orçamento",
       viewDemo: "Ver demo ao vivo",
       notFound: "Projeto não encontrado",
@@ -345,10 +383,9 @@ export const translations = {
       {
         id: "plataforma-gestao-comercial",
         title: "Plataforma de Gestão Comercial",
-        description: "Sistema completo de gestão de clientes, vendas e relatórios para equipa comercial.",
-        fullDescription: `Uma plataforma robusta desenvolvida para equipas comerciais que precisam de gerir todo o ciclo de vendas, desde a prospecção até ao fecho de negócios.
-
-O sistema inclui gestão de contactos e empresas, pipeline de vendas visual, relatórios e dashboards em tempo real, integração com email e calendário, e sistema de notificações automáticas.`,
+        description:
+          "Sistema completo de gestão de clientes, vendas e relatórios para equipa comercial.",
+        fullDescription: `Uma plataforma robusta desenvolvida para equipas comerciais que precisam de gerir todo o ciclo de vendas, desde a prospecção até ao fecho de negócios.\n\nO sistema inclui gestão de contactos e empresas, pipeline de vendas visual, relatórios e dashboards em tempo real, integração com email e calendário, e sistema de notificações automáticas.`,
         challenge:
           "A empresa cliente tinha dificuldade em acompanhar o progresso das vendas e perdia oportunidades por falta de organização. Os dados estavam dispersos em folhas de cálculo e não havia visibilidade sobre o desempenho da equipa.",
         solution:
@@ -365,10 +402,9 @@ O sistema inclui gestão de contactos e empresas, pipeline de vendas visual, rel
       {
         id: "sistema-reservas",
         title: "Sistema de Reservas",
-        description: "Dashboard e backoffice para gestão de reservas com calendário e notificações.",
-        fullDescription: `Sistema completo de gestão de reservas desenvolvido para negócios que precisam de organizar agendamentos de forma eficiente.
-
-Inclui calendário interativo, gestão de disponibilidade, notificações por email e SMS, pagamentos online, e área de cliente para auto-gestão de reservas.`,
+        description:
+          "Dashboard e backoffice para gestão de reservas com calendário e notificações.",
+        fullDescription: `Sistema completo de gestão de reservas desenvolvido para negócios que precisam de organizar agendamentos de forma eficiente.\n\nInclui calendário interativo, gestão de disponibilidade, notificações por email e SMS, pagamentos online, e área de cliente para auto-gestão de reservas.`,
         challenge:
           "O cliente geria reservas por telefone e email, perdendo marcações e causando conflitos de horários. Não havia forma dos clientes verificarem disponibilidade ou fazerem marcações fora do horário de expediente.",
         solution:
@@ -385,10 +421,9 @@ Inclui calendário interativo, gestão de disponibilidade, notificações por em
       {
         id: "website-institucional",
         title: "Website Institucional Premium",
-        description: "Site moderno e responsivo com foco em conversão para empresa de consultoria.",
-        fullDescription: `Website institucional de alta qualidade desenvolvido para uma empresa de consultoria que precisava de transmitir credibilidade e gerar leads qualificados.
-
-O site inclui design premium responsivo, formulários de contacto otimizados, blog com SEO, integração com CRM, e landing pages para campanhas.`,
+        description:
+          "Site moderno e responsivo com foco em conversão para empresa de consultoria.",
+        fullDescription: `Website institucional de alta qualidade desenvolvido para uma empresa de consultoria que precisava de transmitir credibilidade e gerar leads qualificados.\n\nO site inclui design premium responsivo, formulários de contacto otimizados, blog com SEO, integração com CRM, e landing pages para campanhas.`,
         challenge:
           "O website anterior era desatualizado, não era responsivo, e não convertia visitantes em leads. A empresa estava a perder oportunidades de negócio por falta de presença digital profissional.",
         solution:
@@ -405,10 +440,9 @@ O site inclui design premium responsivo, formulários de contacto otimizados, bl
       {
         id: "loja-online",
         title: "Loja Online",
-        description: "E-commerce completo com pagamentos, gestão de stock e integração com transportadoras.",
-        fullDescription: `Loja online completa desenvolvida para uma marca que pretendia expandir as vendas para o digital com uma experiência de compra premium.
-
-Inclui catálogo de produtos avançado, checkout otimizado, múltiplos métodos de pagamento, gestão de stock em tempo real, e integração com transportadoras para tracking automático.`,
+        description:
+          "E-commerce completo com pagamentos, gestão de stock e integração com transportadoras.",
+        fullDescription: `Loja online completa desenvolvida para uma marca que pretendia expandir as vendas para o digital com uma experiência de compra premium.\n\nInclui catálogo de produtos avançado, checkout otimizado, múltiplos métodos de pagamento, gestão de stock em tempo real, e integração com transportadoras para tracking automático.`,
         challenge:
           "A marca vendia apenas em loja física e queria expandir para o online, mas precisava de uma solução que integrasse com o seu sistema de gestão existente e oferecesse uma experiência de compra premium.",
         solution:
@@ -425,10 +459,9 @@ Inclui catálogo de produtos avançado, checkout otimizado, múltiplos métodos 
       {
         id: "portal-cliente",
         title: "Portal / Área de Cliente",
-        description: "Área reservada com autenticação, documentos e comunicação com a empresa.",
-        fullDescription: `Portal de cliente desenvolvido para uma empresa de serviços que precisava de centralizar toda a comunicação e documentação com os seus clientes.
-
-Inclui área segura com autenticação, gestão de documentos, sistema de tickets para suporte, histórico de faturas, e notificações em tempo real.`,
+        description:
+          "Área reservada com autenticação, documentos e comunicação com a empresa.",
+        fullDescription: `Portal de cliente desenvolvido para uma empresa de serviços que precisava de centralizar toda a comunicação e documentação com os seus clientes.\n\nInclui área segura com autenticação, gestão de documentos, sistema de tickets para suporte, histórico de faturas, e notificações em tempo real.`,
         challenge:
           "A comunicação com clientes era feita por email, perdendo-se informação importante. Os clientes não tinham acesso fácil aos seus documentos e faturas, e a equipa de suporte estava sobrecarregada com pedidos simples.",
         solution:
@@ -445,10 +478,9 @@ Inclui área segura com autenticação, gestão de documentos, sistema de ticket
       {
         id: "landing-page-conversao",
         title: "Landing Page de Conversão",
-        description: "Página otimizada para campanhas de marketing com A/B testing e tracking.",
-        fullDescription: `Landing page de alta conversão desenvolvida para campanhas de marketing digital com foco em geração de leads qualificados.
-
-Inclui design otimizado para conversão, formulários multi-step, A/B testing integrado, tracking avançado com pixels, e integração com ferramentas de automação de marketing.`,
+        description:
+          "Página otimizada para campanhas de marketing com A/B testing e tracking.",
+        fullDescription: `Landing page de alta conversão desenvolvida para campanhas de marketing digital com foco em geração de leads qualificados.\n\nInclui design otimizado para conversão, formulários multi-step, A/B testing integrado, tracking avançado com pixels, e integração com ferramentas de automação de marketing.`,
         challenge:
           "As campanhas de marketing não estavam a converter bem porque direcionavam para o website principal. Era necessária uma página dedicada com foco total na conversão da oferta específica.",
         solution:
@@ -481,20 +513,22 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
       badge1: "Fast delivery",
       badge2: "Predictable pricing",
       badge3: "Performance + security",
-      title: "Your business deserves a",
-      titleHighlight: "fast, beautiful",
-      titleEnd: "website built to convert.",
-      subtitle: 'I create custom websites and platforms — and handle monthly maintenance so you never go "without IT".',
+      title: "Your digital partner.",
+      titleHighlight: "Websites and software",
+      titleEnd: "built to grow.",
+      subtitle:
+        "At Orpheon we build custom websites, stores and platforms using AI-driven development — delivering faster, without compromising quality.",
       cta1: "Get a quote",
       cta2: "View projects",
-      stack: "I work with",
-      stackEnd: "and API integrations.",
+      stack: "We build with",
+      stackEnd: "among others, using AI as our operational engine.",
     },
     // Services
     services: {
       title: "Services",
-      titleMuted: "(no complications)",
-      subtitle: "You choose the goal. I handle the rest — from design to code, from deployment to maintenance.",
+      titleMuted: "",
+      subtitle:
+        "You choose the goal. We handle the rest. From design to code, from deployment to maintenance.",
       cta: "I want this",
       items: [
         {
@@ -527,12 +561,20 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
         {
           title: "Integrations & Automations",
           description: "Connect systems and automate processes.",
-          features: ["APIs and advanced forms", "Transactional emails", "Automation of repetitive tasks"],
+          features: [
+            "APIs and advanced forms",
+            "Transactional emails",
+            "Automation of repetitive tasks",
+          ],
         },
         {
           title: "Maintenance & Evolution",
           description: "Continuous support for your project.",
-          features: ["Fixes, improvements, security", "Regular backups", "Monthly support and follow-up"],
+          features: [
+            "Fixes, improvements, security",
+            "Regular backups",
+            "Monthly support and follow-up",
+          ],
         },
       ],
     },
@@ -542,9 +584,10 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
       items: [
         "Clinics and healthcare",
         "Real estate agencies",
-        "Premium local services (studios, gyms, aesthetics)",
+        "Local services (studios, gyms, aesthetics)",
         "Consultants and B2B businesses",
-        "SMEs without an IT team",
+        "SMEs",
+        "Entrepreneurs",
       ],
     },
     // Benefits
@@ -553,26 +596,29 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
       items: [
         {
           title: "More leads",
-          description: "Well-placed forms and CTAs to convert visitors into customers.",
+          description: "Well-placed forms and CTAs for better conversion.",
         },
         {
-          title: "Fast site",
-          description: "Optimized performance and technical SEO for better ranking.",
+          title: "2x faster delivery",
+          description:
+            "AI-driven development lets us deliver projects in half the time of a traditional agency.",
         },
         {
           title: "No headaches",
-          description: "Continuous maintenance — I handle everything so you can focus on your business.",
+          description:
+            "Continuous maintenance. We handle everything so you can focus on your business.",
         },
         {
           title: "Scalable",
-          description: "Foundation ready to grow and evolve into a complete platform.",
+          description:
+            "Foundation ready to grow and evolve into a complete platform.",
         },
       ],
     },
     // Projects
     projects: {
       title: "Projects",
-      subtitle: "Some work (or prototypes) that show how I think and build.",
+      subtitle: "Some work (or prototypes) that show how we think and build.",
       filterAll: "All",
       filterWebsites: "Websites",
       filterStores: "Stores",
@@ -589,20 +635,22 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
         {
           number: "01",
           title: "Discovery",
-          subtitle: "(15 min)",
-          description: "Understand your goals, target audience, and project requirements.",
+          subtitle: "(30 min)",
+          description:
+            "We understand your goals, target audience, and project requirements.",
         },
         {
           number: "02",
           title: "Clear proposal",
           subtitle: "",
-          description: "Price, timeline, and scope well defined — no surprises.",
+          description: "Price, timeline, and scope well defined. No surprises.",
         },
         {
           number: "03",
           title: "Build + review",
           subtitle: "",
-          description: "Fast deliveries with continuous feedback throughout the process.",
+          description:
+            "Fast deliveries with continuous feedback throughout the process.",
         },
         {
           number: "04",
@@ -622,13 +670,14 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
       wantPlan: "I want this plan",
       unsure: "Not sure which to choose? Book a call",
       note: '"Requests" mean small tasks (e.g., changing text, adjusting sections, small integrations). New major features are quoted separately.',
-      terms: "No long-term commitment — minimum 3 months, then monthly cancellable with 30 days notice.",
+      terms:
+        "No long-term commitment — minimum 3 months, then monthly cancellable with 30 days notice.",
       plans: [
         {
           name: "START",
-          price: "€79",
+          price: "€150",
           period: "/month",
-          setup: "from €490",
+          setup: "from €800",
           description: "Professional online presence",
           features: [
             "Site up to 5 sections (one-page or simple multi-page)",
@@ -641,9 +690,9 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
         },
         {
           name: "GROW",
-          price: "€129",
+          price: "€250",
           period: "/month",
-          setup: "from €990",
+          setup: "from €1,500",
           description: "Businesses wanting consistent leads",
           popular: true,
           features: [
@@ -658,9 +707,9 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
         },
         {
           name: "SCALE",
-          price: "€199",
+          price: "€400",
           period: "/month",
-          setup: "from €1,900",
+          setup: "from €3,000",
           description: "Companies growing and automating",
           features: [
             "Everything in GROW +",
@@ -678,11 +727,31 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
       title: "Extras",
       titleMuted: "(optional)",
       items: [
-        { title: "Light branding", description: "Logo + palette + typography", price: "from €250" },
-        { title: "Copywriting", description: "Persuasive texts", price: "from €150" },
-        { title: "Photo / video session", description: "Specialized partners", price: "on request" },
-        { title: "Google Business Profile", description: "Optimized profile", price: "from €120" },
-        { title: "Ad campaigns", description: "Management + budget", price: "from €150/month" },
+        {
+          title: "Branding",
+          description: "Logo + palette + typography + brand guidelines",
+          price: "from €400",
+        },
+        {
+          title: "Copywriting",
+          description: "Strategic copy for the site or campaigns",
+          price: "from €200",
+        },
+        {
+          title: "Ongoing SEO",
+          description: "Content, backlinks and monthly optimization",
+          price: "from €300/month",
+        },
+        {
+          title: "AI Automations",
+          description: "Automated flows, chatbots and smart integrations",
+          price: "from €500",
+        },
+        {
+          title: "Ad Campaigns",
+          description: "Google Ads / Meta Ads management + monthly report",
+          price: "from €250/month",
+        },
       ],
     },
     // Testimonials
@@ -690,19 +759,19 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
       title: "What they say",
       items: [
         {
-          name: "Maria Silva",
-          company: "Wellness Clinic",
-          text: "The site looks amazing and online bookings increased by 40%. I recommend it to anyone who wants results.",
+          name: "Ricardo Fonseca",
+          company: "RF Aesthetic Medicine, Lisbon",
+          text: "I had a 2019 site that embarrassed the clinic. In 3 weeks Orpheon delivered something patients actually comment on during appointments. Online bookings tripled in the first month.",
         },
         {
-          name: "João Santos",
-          company: "JPS Consulting",
-          text: "I finally have a professional site that reflects the quality of my work. Excellent support.",
+          name: "Marta Oliveira",
+          company: "Oliveira Property Group, Porto",
+          text: "The backoffice they built replaced three Excel spreadsheets and a daily headache. The team adapted in two days. I don't know how we worked without it.",
         },
         {
-          name: "Ana Costa",
-          company: "Costa Real Estate",
-          text: "The property management platform simplified our entire process. Fantastic work.",
+          name: "Bruno Almeida",
+          company: "Almeida & Associates, Consultants",
+          text: "I was the third agency they contacted. The others wanted 3 months and twice the price. Orpheon had a proposal in 24h and delivered in 2 weeks. The quality isn't comparable.",
         },
       ],
     },
@@ -713,44 +782,44 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
         {
           question: "How long does it take?",
           answer:
-            "Depends on the project, but most sites are ready in 2-4 weeks. More complex platforms can take 4-8 weeks. I always give a realistic deadline in the proposal.",
+            "A corporate site is ready in 1-2 weeks. An online store or platform, between 3-6 weeks. After that, maintenance is continuous and monthly. Development time is half of what a traditional agency takes, thanks to our optimized process and use of AI.",
         },
         {
           question: "What's included in the monthly fee?",
           answer:
-            "Hosting, SSL, backups, monitoring, small monthly changes (according to the plan), security updates, and email/WhatsApp support.",
+            "Hosting, SSL, backups, monitoring, and ongoing support. Plus the monthly requests in your plan for small changes. Basically: your site works, it's secure, and you have someone to call when you need it.",
         },
         {
           question: "Can I cancel anytime?",
           answer:
-            "Yes. After the first 3 months, the contract is monthly and you can cancel with 30 days notice. You keep all your project's code.",
+            "Yes. Minimum 3 months, then monthly with 30 days notice. The code is yours from day one.",
         },
         {
-          question: "Do you work with WordPress / Shopify?",
+          question: "What is AI-driven development?",
           answer:
-            "I can work with these platforms if it makes sense for the project, but I prefer custom solutions in React/Node for better performance and full control.",
+            "We use AI to accelerate development: building, testing, documentation. The practical result for you: projects delivered faster and at a more competitive price. Technical control stays entirely on our side.",
         },
         {
-          question: "What if I already have a site?",
+          question: "I already have a site. Is it worth switching?",
           answer:
-            "We can analyze it and decide if it makes sense to optimize the existing one or create a new one. In many cases, starting from scratch is more efficient.",
+            "Depends. Send us the link and we'll tell you honestly whether it's worth optimizing what you have or starting fresh. No interest in selling what you don't need.",
         },
         {
-          question: "Do you make internal platforms and backoffices?",
+          question: "Do you build internal platforms and backoffices?",
           answer:
-            "Yes! It's one of my specialties — management systems, dashboards, reserved areas, API integrations, and automations.",
+            "Yes. CRMs, booking systems, dashboards, client portals. If you have a manual process that should be automated, we can probably solve it.",
         },
       ],
     },
     // About
     about: {
       title: "A small studio. Big results.",
-      text: "I'm a fullstack web dev working with modern stack to build fast, secure, and scalable solutions. My focus is removing complexity: you handle your business, I handle the digital.",
+      text: "At Orpheon we use AI-driven development to build fast, secure, and scalable solutions. Our focus is removing complexity: you handle your business, we handle the digital.",
     },
     // Contact
     contact: {
       title: "Let's talk",
-      subtitle: "Tell me what you need. I'll respond with a clear proposal.",
+      subtitle: "Tell us what you need. We'll help.",
       form: {
         name: "Name",
         namePlaceholder: "Your name",
@@ -758,7 +827,7 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
         emailPlaceholder: "email@example.com",
         phone: "Phone (optional)",
         phonePlaceholder: "+351 XXX XXX XXX",
-        company: "Company",
+        company: "Company (optional)",
         companyPlaceholder: "Company name",
         need: "What do you need?",
         needPlaceholder: "Select an option",
@@ -770,7 +839,7 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
           other: "Other",
         },
         message: "Message",
-        messagePlaceholder: "Tell me more about your project...",
+        messagePlaceholder: "Tell us more about your project...",
         submit: "Send request",
       },
       quickContacts: "Quick contacts",
@@ -782,8 +851,7 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
     },
     // Footer
     footer: {
-      description:
-        "Websites and platforms that profit — with maintenance included. Fullstack web development in Portugal.",
+      description: "Built to convert. Maintained to last.",
       quickLinks: "Quick links",
       legal: "Legal",
       privacy: "Privacy Policy",
@@ -800,7 +868,8 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
       solution: "The Solution",
       results: "Results",
       wantProject: "Want a project like this?",
-      wantProjectText: "Let's discuss how I can help your business grow with a custom digital solution.",
+      wantProjectText:
+        "Let's discuss how Orpheon can help your business grow with a custom digital solution.",
       requestQuote: "Get a quote",
       viewDemo: "View live demo",
       notFound: "Project not found",
@@ -810,12 +879,11 @@ Inclui design otimizado para conversão, formulários multi-step, A/B testing in
       {
         id: "plataforma-gestao-comercial",
         title: "Commercial Management Platform",
-        description: "Complete client, sales, and reporting management system for sales teams.",
-        fullDescription: `A robust platform developed for sales teams that need to manage the entire sales cycle, from prospecting to closing deals.
-
-The system includes contact and company management, visual sales pipeline, real-time reports and dashboards, email and calendar integration, and automatic notification system.`,
+        description:
+          "Complete client, sales, and reporting management system for sales teams.",
+        fullDescription: `A robust platform developed for sales teams that need to manage the entire sales cycle, from prospecting to closing deals.\n\nThe system includes contact and company management, visual sales pipeline, real-time reports and dashboards, email and calendar integration, and automatic notification system.`,
         challenge:
-          "The client company had difficulty tracking sales progress and was losing opportunities due to lack of organization. Data was scattered across spreadsheets and there was no visibility into team performance.",
+          "The client had difficulty tracking sales progress and was losing opportunities due to lack of organization. Data was scattered across spreadsheets and there was no visibility into team performance.",
         solution:
           "We developed a centralized platform with real-time dashboard, visual drag-and-drop pipeline management, and automatic reports. The team now has complete visibility over all opportunities and performance metrics.",
         results: [
@@ -830,10 +898,9 @@ The system includes contact and company management, visual sales pipeline, real-
       {
         id: "sistema-reservas",
         title: "Booking System",
-        description: "Dashboard and backoffice for booking management with calendar and notifications.",
-        fullDescription: `Complete booking management system developed for businesses that need to organize appointments efficiently.
-
-Includes interactive calendar, availability management, email and SMS notifications, online payments, and customer area for self-service booking management.`,
+        description:
+          "Dashboard and backoffice for booking management with calendar and notifications.",
+        fullDescription: `Complete booking management system developed for businesses that need to organize appointments efficiently.\n\nIncludes interactive calendar, availability management, email and SMS notifications, online payments, and customer area for self-service booking management.`,
         challenge:
           "The client managed bookings by phone and email, missing appointments and causing schedule conflicts. There was no way for customers to check availability or make bookings outside business hours.",
         solution:
@@ -850,10 +917,9 @@ Includes interactive calendar, availability management, email and SMS notificati
       {
         id: "website-institucional",
         title: "Premium Corporate Website",
-        description: "Modern, responsive site focused on conversion for a consulting company.",
-        fullDescription: `High-quality corporate website developed for a consulting company that needed to convey credibility and generate qualified leads.
-
-The site includes premium responsive design, optimized contact forms, SEO blog, CRM integration, and landing pages for campaigns.`,
+        description:
+          "Modern, responsive site focused on conversion for a consulting company.",
+        fullDescription: `High-quality corporate website developed for a consulting company that needed to convey credibility and generate qualified leads.\n\nThe site includes premium responsive design, optimized contact forms, SEO blog, CRM integration, and landing pages for campaigns.`,
         challenge:
           "The previous website was outdated, not responsive, and wasn't converting visitors into leads. The company was losing business opportunities due to lack of professional digital presence.",
         solution:
@@ -870,10 +936,9 @@ The site includes premium responsive design, optimized contact forms, SEO blog, 
       {
         id: "loja-online",
         title: "Online Store",
-        description: "Complete e-commerce with payments, stock management, and carrier integration.",
-        fullDescription: `Complete online store developed for a brand looking to expand sales to digital with a premium shopping experience.
-
-Includes advanced product catalog, optimized checkout, multiple payment methods, real-time stock management, and carrier integration for automatic tracking.`,
+        description:
+          "Complete e-commerce with payments, stock management, and carrier integration.",
+        fullDescription: `Complete online store developed for a brand looking to expand sales to digital with a premium shopping experience.\n\nIncludes advanced product catalog, optimized checkout, multiple payment methods, real-time stock management, and carrier integration for automatic tracking.`,
         challenge:
           "The brand only sold in physical stores and wanted to expand online, but needed a solution that integrated with their existing management system and offered a premium shopping experience.",
         solution:
@@ -890,10 +955,9 @@ Includes advanced product catalog, optimized checkout, multiple payment methods,
       {
         id: "portal-cliente",
         title: "Customer Portal",
-        description: "Reserved area with authentication, documents, and company communication.",
-        fullDescription: `Customer portal developed for a service company that needed to centralize all communication and documentation with their clients.
-
-Includes secure area with authentication, document management, support ticket system, invoice history, and real-time notifications.`,
+        description:
+          "Reserved area with authentication, documents, and company communication.",
+        fullDescription: `Customer portal developed for a service company that needed to centralize all communication and documentation with their clients.\n\nIncludes secure area with authentication, document management, support ticket system, invoice history, and real-time notifications.`,
         challenge:
           "Client communication was done by email, losing important information. Clients didn't have easy access to their documents and invoices, and the support team was overwhelmed with simple requests.",
         solution:
@@ -910,10 +974,9 @@ Includes secure area with authentication, document management, support ticket sy
       {
         id: "landing-page-conversao",
         title: "Conversion Landing Page",
-        description: "Page optimized for marketing campaigns with A/B testing and tracking.",
-        fullDescription: `High-conversion landing page developed for digital marketing campaigns focused on generating qualified leads.
-
-Includes conversion-optimized design, multi-step forms, integrated A/B testing, advanced pixel tracking, and marketing automation tools integration.`,
+        description:
+          "Page optimized for marketing campaigns with A/B testing and tracking.",
+        fullDescription: `High-conversion landing page developed for digital marketing campaigns focused on generating qualified leads.\n\nIncludes conversion-optimized design, multi-step forms, integrated A/B testing, advanced pixel tracking, and marketing automation tools integration.`,
         challenge:
           "Marketing campaigns weren't converting well because they directed to the main website. A dedicated page with total focus on the specific offer conversion was needed.",
         solution:

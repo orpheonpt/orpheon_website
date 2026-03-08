@@ -1,9 +1,9 @@
 "use client"
 
-import { Building2, Home, Briefcase, Users, Building } from "lucide-react"
+import { Building2, Home, Briefcase, Users, Building, Zap } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
-const audienceIcons = [Building2, Home, Briefcase, Users, Building]
+const audienceIcons = [Building2, Home, Briefcase, Users, Building, Zap]
 
 export function TargetAudience() {
   const { t } = useLanguage()
