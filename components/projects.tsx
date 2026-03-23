@@ -1,9 +1,17 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 import { ExternalLink, FileText } from "lucide-react"
 import Link from "next/link"
 import { projects } from "@/lib/projects-data"
@@ -54,44 +62,60 @@ export function Projects() {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {filteredProjects.map((project) => (
-            <Card
-              key={project.title}
-              className="group bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col"
-            >
-              <div className="aspect-video bg-secondary/50 relative flex-shrink-0">
-                <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/50">
-                  <FileText className="w-12 h-12" />
-                </div>
-              </div>
-              <CardContent className="pt-6 flex flex-col flex-1">
-                <h3 className="text-lg font-semibold mb-2">{getProjectTitle(project.id)}</h3>
-                <p className="text-sm text-muted-foreground mb-4">{getProjectDescription(project.id)}</p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="text-xs">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-                <div className="flex flex-col gap-2 mt-auto items-center">
-                  <Button asChild variant="outline" size="sm" className="w-full bg-transparent">
-                    <Link href={`/projetos/${project.id}`} className="gap-1.5">
-                      <FileText className="w-4 h-4" />
-                      {t.projects.caseStudy}
-                    </Link>
-                  </Button>
-                  <Button asChild size="sm" className="w-full">
-                    <Link href="#" className="gap-1.5">
-                      <ExternalLink className="w-4 h-4" />
-                      {t.projects.openDemo}
-                    </Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="mb-12">
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {filteredProjects.slice(0, 6).map((project) => (
+                <CarouselItem key={project.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <Card className="group bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col h-full">
+                    <div className="aspect-video bg-secondary/50 relative flex-shrink-0 overflow-hidden">
+                      {project.image ? (
+                        <Image
+                          src={project.image}
+                          alt={getProjectTitle(project.id)}
+                          fill
+                          className="object-cover"
+                        />
+                      ) : (
+                        <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/50">
+                          <FileText className="w-12 h-12" />
+                        </div>
+                      )}
+                    </div>
+                    <CardContent className="pt-6 flex flex-col flex-1">
+                      <h3 className="text-lg font-semibold mb-2">{getProjectTitle(project.id)}</h3>
+                      <p className="text-sm text-muted-foreground mb-4">{getProjectDescription(project.id)}</p>
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        {project.tags.map((tag) => (
+                          <Badge key={tag} variant="secondary" className="text-xs">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                      <div className="flex flex-col gap-2 mt-auto items-center">
+                        <Button asChild variant="outline" size="sm" className="w-full bg-transparent">
+                          <Link href={`/projetos/${project.id}`} className="gap-1.5">
+                            <FileText className="w-4 h-4" />
+                            {t.projects.caseStudy}
+                          </Link>
+                        </Button>
+                        {project.url && (
+                          <Button asChild size="sm" className="w-full">
+                            <Link href={project.url} target="_blank" rel="noopener noreferrer" className="gap-1.5">
+                              <ExternalLink className="w-4 h-4" />
+                              {t.projects.openDemo}
+                            </Link>
+                          </Button>
+                        )}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex -left-12" />
+            <CarouselNext className="hidden md:flex -right-12" />
+          </Carousel>
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">

@@ -381,117 +381,79 @@ export const translations = {
     // Projects data
     projectsData: [
       {
-        id: "plataforma-gestao-comercial",
-        title: "Plataforma de Gestão Comercial",
+        id: "babipereira",
+        title: "Babi Pereira",
         description:
-          "Sistema completo de gestão de clientes, vendas e relatórios para equipa comercial.",
-        fullDescription: `Uma plataforma robusta desenvolvida para equipas comerciais que precisam de gerir todo o ciclo de vendas, desde a prospecção até ao fecho de negócios.\n\nO sistema inclui gestão de contactos e empresas, pipeline de vendas visual, relatórios e dashboards em tempo real, integração com email e calendário, e sistema de notificações automáticas.`,
+          "Website profissional para portfólio e serviços.",
+        fullDescription: `Website profissional desenvolvido com design moderno e responsivo para apresentação de portfólio e serviços.\n\nInclui galeria de trabalhos, formulário de contacto otimizado, e otimização para SEO.`,
         challenge:
-          "A empresa cliente tinha dificuldade em acompanhar o progresso das vendas e perdia oportunidades por falta de organização. Os dados estavam dispersos em folhas de cálculo e não havia visibilidade sobre o desempenho da equipa.",
+          "Necessidade de uma presença digital forte e profissional na internet.",
         solution:
-          "Desenvolvemos uma plataforma centralizada com dashboard em tempo real, gestão de pipeline visual drag-and-drop, e relatórios automáticos. A equipa passou a ter visibilidade completa sobre todas as oportunidades e métricas de desempenho.",
+          "Desenvolvemos um website moderno, rápido e totalmente responsivo com foco em apresentação de trabalhos e geração de contactos.",
         results: [
-          "Aumento de 40% na taxa de conversão",
-          "Redução de 60% no tempo de follow-up",
-          "Visibilidade total sobre pipeline de vendas",
-          "Relatórios automáticos semanais",
+          "Presença online profissional",
+          "Otimizado para motores de busca",
+          "Carregamento rápido e responsivo",
+          "Formulário de contacto integrado",
         ],
-        duration: "3 meses",
+        duration: "2 semanas",
         year: "2024",
       },
       {
-        id: "sistema-reservas",
-        title: "Sistema de Reservas",
+        id: "franciscodesousa",
+        title: "Francisco de Sousa",
         description:
-          "Dashboard e backoffice para gestão de reservas com calendário e notificações.",
-        fullDescription: `Sistema completo de gestão de reservas desenvolvido para negócios que precisam de organizar agendamentos de forma eficiente.\n\nInclui calendário interativo, gestão de disponibilidade, notificações por email e SMS, pagamentos online, e área de cliente para auto-gestão de reservas.`,
+          "Portfólio pessoal e apresentação profissional.",
+        fullDescription: `Website de portfólio desenvolvido com as últimas tecnologias web para apresentação de trabalhos e experiência profissional.\n\nInclui seções de projectos, skills, e formulário de contacto direto.`,
         challenge:
-          "O cliente geria reservas por telefone e email, perdendo marcações e causando conflitos de horários. Não havia forma dos clientes verificarem disponibilidade ou fazerem marcações fora do horário de expediente.",
+          "Criar uma presença digital impactante e fácil de navegar.",
         solution:
-          "Criámos um sistema de reservas online com calendário em tempo real, confirmações automáticas, e área de cliente. Os clientes podem agora reservar 24/7 e recebem lembretes automáticos.",
+          "Desenvolvemos um site moderno com design elegante, animações suaves e navegação intuitiva.",
         results: [
-          "Redução de 80% em no-shows",
-          "Aumento de 50% em reservas fora de horas",
-          "Eliminação de conflitos de agendamento",
-          "Automatização de comunicações",
+          "Portfólio profissional online",
+          "Melhor apresentação de trabalhos",
+          "Facilidade no contacto direto",
+          "Visibilidade profissional aumentada",
         ],
-        duration: "2 meses",
+        duration: "2 semanas",
         year: "2024",
       },
       {
-        id: "website-institucional",
-        title: "Website Institucional Premium",
+        id: "palacebc",
+        title: "Palace BC",
         description:
-          "Site moderno e responsivo com foco em conversão para empresa de consultoria.",
-        fullDescription: `Website institucional de alta qualidade desenvolvido para uma empresa de consultoria que precisava de transmitir credibilidade e gerar leads qualificados.\n\nO site inclui design premium responsivo, formulários de contacto otimizados, blog com SEO, integração com CRM, e landing pages para campanhas.`,
+          "Website corporativo com apresentação de serviços e soluções.",
+        fullDescription: `Website corporativo desenvolvido com design profissional para apresentação de serviços, produtos e soluções de negócio.\n\nInclui páginas de serviços detalhadas, portfólio de clientes, contactos regionais, e formulários de pedido de orçamento.`,
         challenge:
-          "O website anterior era desatualizado, não era responsivo, e não convertia visitantes em leads. A empresa estava a perder oportunidades de negócio por falta de presença digital profissional.",
+          "Necessidade de modernizar a presença digital e melhorar a comunicação com potenciais clientes.",
         solution:
-          "Desenvolvemos um website moderno com foco em conversão, optimizado para SEO, com formulários estrategicamente posicionados e integração com o CRM da empresa para gestão automática de leads.",
+          "Desenvolvemos um site corporativo robusto, com design profissional e estrutura clara que facilita a navegação e conversão de visitantes.",
         results: [
-          "Aumento de 200% em leads gerados",
-          "Tempo médio no site aumentou 150%",
-          "Posicionamento top 3 no Google",
-          "Taxa de conversão de 5.2%",
-        ],
-        duration: "6 semanas",
-        year: "2024",
-      },
-      {
-        id: "loja-online",
-        title: "Loja Online",
-        description:
-          "E-commerce completo com pagamentos, gestão de stock e integração com transportadoras.",
-        fullDescription: `Loja online completa desenvolvida para uma marca que pretendia expandir as vendas para o digital com uma experiência de compra premium.\n\nInclui catálogo de produtos avançado, checkout otimizado, múltiplos métodos de pagamento, gestão de stock em tempo real, e integração com transportadoras para tracking automático.`,
-        challenge:
-          "A marca vendia apenas em loja física e queria expandir para o online, mas precisava de uma solução que integrasse com o seu sistema de gestão existente e oferecesse uma experiência de compra premium.",
-        solution:
-          "Desenvolvemos um e-commerce à medida com integração bidirecional com o ERP existente, checkout em 3 passos, e sistema de tracking integrado. O design foi pensado para refletir o posicionamento premium da marca.",
-        results: [
-          "25% das vendas totais via online no 1º ano",
-          "Taxa de abandono de carrinho de apenas 35%",
-          "Integração total com ERP existente",
-          "Expansão para mercado internacional",
-        ],
-        duration: "4 meses",
-        year: "2023",
-      },
-      {
-        id: "portal-cliente",
-        title: "Portal / Área de Cliente",
-        description:
-          "Área reservada com autenticação, documentos e comunicação com a empresa.",
-        fullDescription: `Portal de cliente desenvolvido para uma empresa de serviços que precisava de centralizar toda a comunicação e documentação com os seus clientes.\n\nInclui área segura com autenticação, gestão de documentos, sistema de tickets para suporte, histórico de faturas, e notificações em tempo real.`,
-        challenge:
-          "A comunicação com clientes era feita por email, perdendo-se informação importante. Os clientes não tinham acesso fácil aos seus documentos e faturas, e a equipa de suporte estava sobrecarregada com pedidos simples.",
-        solution:
-          "Criámos um portal self-service onde os clientes acedem a toda a sua documentação, histórico de faturas, e podem abrir tickets de suporte. A comunicação ficou centralizada e rastreável.",
-        results: [
-          "Redução de 70% em emails de suporte",
-          "Clientes acedem documentos 24/7",
-          "Tempo médio de resolução reduzido em 50%",
-          "Satisfação de cliente aumentou 35%",
-        ],
-        duration: "2.5 meses",
-        year: "2024",
-      },
-      {
-        id: "landing-page-conversao",
-        title: "Landing Page de Conversão",
-        description:
-          "Página otimizada para campanhas de marketing com A/B testing e tracking.",
-        fullDescription: `Landing page de alta conversão desenvolvida para campanhas de marketing digital com foco em geração de leads qualificados.\n\nInclui design otimizado para conversão, formulários multi-step, A/B testing integrado, tracking avançado com pixels, e integração com ferramentas de automação de marketing.`,
-        challenge:
-          "As campanhas de marketing não estavam a converter bem porque direcionavam para o website principal. Era necessária uma página dedicada com foco total na conversão da oferta específica.",
-        solution:
-          "Desenvolvemos uma landing page com copy persuasivo, design focado na ação, formulário multi-step para reduzir fricção, e sistema de A/B testing para otimização contínua.",
-        results: [
-          "Taxa de conversão de 12.5%",
-          "Custo por lead reduzido em 60%",
-          "A/B testing identificou variante 40% melhor",
-          "ROI de campanha aumentou 3x",
+          "Presença corporativa fortalecida",
+          "Melhor comunicação de serviços",
+          "Facilidade na geração de leads",
+          "Estrutura escalável para futuras expansões",
         ],
         duration: "3 semanas",
+        year: "2024",
+      },
+      {
+        id: "a5tower",
+        title: "A5 Tower",
+        description:
+          "Website para empresa com apresentação de produtos e contactos.",
+        fullDescription: `Website profissional desenvolvido para apresentação de produtos, serviços e informações de contacto da empresa.\n\nInclui catálogo de produtos, informações sobre a empresa, formulário de contacto, e otimização para SEO.`,
+        challenge:
+          "Criar uma presença digital clara e eficiente para facilitar contacto com clientes.",
+        solution:
+          "Desenvolvemos um website simples mas eficaz, com design limpo, navegação intuitiva e chamadas à ação claras.",
+        results: [
+          "Presença online consolidada",
+          "Aumento de contactos recebidos",
+          "Melhor acessibilidade de informações",
+          "Website otimizado para SEO",
+        ],
+        duration: "2 semanas",
         year: "2024",
       },
     ],
@@ -877,117 +839,79 @@ export const translations = {
     // Projects data
     projectsData: [
       {
-        id: "plataforma-gestao-comercial",
-        title: "Commercial Management Platform",
+        id: "babipereira",
+        title: "Babi Pereira",
         description:
-          "Complete client, sales, and reporting management system for sales teams.",
-        fullDescription: `A robust platform developed for sales teams that need to manage the entire sales cycle, from prospecting to closing deals.\n\nThe system includes contact and company management, visual sales pipeline, real-time reports and dashboards, email and calendar integration, and automatic notification system.`,
+          "Professional website for portfolio and services.",
+        fullDescription: `Professional website developed with modern and responsive design for portfolio and services presentation.\n\nIncludes work gallery, optimized contact form, and SEO optimization.`,
         challenge:
-          "The client had difficulty tracking sales progress and was losing opportunities due to lack of organization. Data was scattered across spreadsheets and there was no visibility into team performance.",
+          "Need for a strong and professional digital presence on the internet.",
         solution:
-          "We developed a centralized platform with real-time dashboard, visual drag-and-drop pipeline management, and automatic reports. The team now has complete visibility over all opportunities and performance metrics.",
+          "We developed a modern, fast, and fully responsive website focused on presenting work and generating contacts.",
         results: [
-          "40% increase in conversion rate",
-          "60% reduction in follow-up time",
-          "Total visibility over sales pipeline",
-          "Automatic weekly reports",
+          "Professional online presence",
+          "Optimized for search engines",
+          "Fast loading and responsive",
+          "Integrated contact form",
         ],
-        duration: "3 months",
+        duration: "2 weeks",
         year: "2024",
       },
       {
-        id: "sistema-reservas",
-        title: "Booking System",
+        id: "franciscodesousa",
+        title: "Francisco de Sousa",
         description:
-          "Dashboard and backoffice for booking management with calendar and notifications.",
-        fullDescription: `Complete booking management system developed for businesses that need to organize appointments efficiently.\n\nIncludes interactive calendar, availability management, email and SMS notifications, online payments, and customer area for self-service booking management.`,
+          "Personal portfolio and professional presentation.",
+        fullDescription: `Portfolio website developed with the latest web technologies for presenting work and professional experience.\n\nIncludes project sections, skills, and direct contact form.`,
         challenge:
-          "The client managed bookings by phone and email, missing appointments and causing schedule conflicts. There was no way for customers to check availability or make bookings outside business hours.",
+          "Create an impactful and easy-to-navigate digital presence.",
         solution:
-          "We created an online booking system with real-time calendar, automatic confirmations, and customer area. Customers can now book 24/7 and receive automatic reminders.",
+          "We developed a modern site with elegant design, smooth animations, and intuitive navigation.",
         results: [
-          "80% reduction in no-shows",
-          "50% increase in after-hours bookings",
-          "Elimination of scheduling conflicts",
-          "Automated communications",
+          "Professional portfolio online",
+          "Better work presentation",
+          "Easy direct contact",
+          "Increased professional visibility",
         ],
-        duration: "2 months",
+        duration: "2 weeks",
         year: "2024",
       },
       {
-        id: "website-institucional",
-        title: "Premium Corporate Website",
+        id: "palacebc",
+        title: "Palace BC",
         description:
-          "Modern, responsive site focused on conversion for a consulting company.",
-        fullDescription: `High-quality corporate website developed for a consulting company that needed to convey credibility and generate qualified leads.\n\nThe site includes premium responsive design, optimized contact forms, SEO blog, CRM integration, and landing pages for campaigns.`,
+          "Corporate website with services and solutions presentation.",
+        fullDescription: `Corporate website developed with professional design for presenting services, products, and business solutions.\n\nIncludes detailed service pages, client portfolio, regional contacts, and quotation request forms.`,
         challenge:
-          "The previous website was outdated, not responsive, and wasn't converting visitors into leads. The company was losing business opportunities due to lack of professional digital presence.",
+          "Need to modernize digital presence and improve communication with potential clients.",
         solution:
-          "We developed a modern website focused on conversion, optimized for SEO, with strategically positioned forms and CRM integration for automatic lead management.",
+          "We developed a robust corporate site with professional design and clear structure that facilitates navigation and visitor conversion.",
         results: [
-          "200% increase in generated leads",
-          "Average time on site increased 150%",
-          "Top 3 Google ranking",
-          "5.2% conversion rate",
-        ],
-        duration: "6 weeks",
-        year: "2024",
-      },
-      {
-        id: "loja-online",
-        title: "Online Store",
-        description:
-          "Complete e-commerce with payments, stock management, and carrier integration.",
-        fullDescription: `Complete online store developed for a brand looking to expand sales to digital with a premium shopping experience.\n\nIncludes advanced product catalog, optimized checkout, multiple payment methods, real-time stock management, and carrier integration for automatic tracking.`,
-        challenge:
-          "The brand only sold in physical stores and wanted to expand online, but needed a solution that integrated with their existing management system and offered a premium shopping experience.",
-        solution:
-          "We developed a custom e-commerce with bidirectional ERP integration, 3-step checkout, and integrated tracking system. The design was created to reflect the brand's premium positioning.",
-        results: [
-          "25% of total sales via online in 1st year",
-          "Cart abandonment rate of only 35%",
-          "Full integration with existing ERP",
-          "Expansion to international market",
-        ],
-        duration: "4 months",
-        year: "2023",
-      },
-      {
-        id: "portal-cliente",
-        title: "Customer Portal",
-        description:
-          "Reserved area with authentication, documents, and company communication.",
-        fullDescription: `Customer portal developed for a service company that needed to centralize all communication and documentation with their clients.\n\nIncludes secure area with authentication, document management, support ticket system, invoice history, and real-time notifications.`,
-        challenge:
-          "Client communication was done by email, losing important information. Clients didn't have easy access to their documents and invoices, and the support team was overwhelmed with simple requests.",
-        solution:
-          "We created a self-service portal where clients access all their documentation, invoice history, and can open support tickets. Communication became centralized and traceable.",
-        results: [
-          "70% reduction in support emails",
-          "Clients access documents 24/7",
-          "Average resolution time reduced by 50%",
-          "Customer satisfaction increased 35%",
-        ],
-        duration: "2.5 months",
-        year: "2024",
-      },
-      {
-        id: "landing-page-conversao",
-        title: "Conversion Landing Page",
-        description:
-          "Page optimized for marketing campaigns with A/B testing and tracking.",
-        fullDescription: `High-conversion landing page developed for digital marketing campaigns focused on generating qualified leads.\n\nIncludes conversion-optimized design, multi-step forms, integrated A/B testing, advanced pixel tracking, and marketing automation tools integration.`,
-        challenge:
-          "Marketing campaigns weren't converting well because they directed to the main website. A dedicated page with total focus on the specific offer conversion was needed.",
-        solution:
-          "We developed a landing page with persuasive copy, action-focused design, multi-step form to reduce friction, and A/B testing system for continuous optimization.",
-        results: [
-          "12.5% conversion rate",
-          "Cost per lead reduced by 60%",
-          "A/B testing identified 40% better variant",
-          "Campaign ROI increased 3x",
+          "Strengthened corporate presence",
+          "Better service communication",
+          "Ease in lead generation",
+          "Scalable structure for future expansions",
         ],
         duration: "3 weeks",
+        year: "2024",
+      },
+      {
+        id: "a5tower",
+        title: "A5 Tower",
+        description:
+          "Website for company with products and contacts presentation.",
+        fullDescription: `Professional website developed for presenting products, services, and company contact information.\n\nIncludes product catalog, company information, contact form, and SEO optimization.`,
+        challenge:
+          "Create a clear and efficient digital presence to facilitate customer contact.",
+        solution:
+          "We developed a simple but effective website with clean design, intuitive navigation, and clear calls-to-action.",
+        results: [
+          "Consolidated online presence",
+          "Increase in received contacts",
+          "Better information accessibility",
+          "SEO optimized website",
+        ],
+        duration: "2 weeks",
         year: "2024",
       },
     ],

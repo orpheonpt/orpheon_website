@@ -1,77 +1,102 @@
 export const projects = [
   {
-    id: "plataforma-gestao-comercial",
-    title: "Plataforma de Gestão Comercial",
-    description: "Sistema completo de gestão de clientes, vendas e relatórios para equipa comercial.",
-    fullDescription: `Uma plataforma robusta desenvolvida para equipas comerciais que precisam de gerir todo o ciclo de vendas, desde a prospecção até ao fecho de negócios.
-
-O sistema inclui gestão de contactos e empresas, pipeline de vendas visual, relatórios e dashboards em tempo real, integração com email e calendário, e sistema de notificações automáticas.`,
+    id: "babipereira",
+    title: "Babi Pereira",
+    description: "Website profissional para portfólio e serviços.",
+    fullDescription: `Website profissional desenvolvido com design moderno e responsivo para apresentação de portfólio e serviços.
+      Inclui galeria de trabalhos, formulário de contacto otimizado, e otimização para SEO.`,
     challenge:
-      "A empresa cliente tinha dificuldade em acompanhar o progresso das vendas e perdia oportunidades por falta de organização. Os dados estavam dispersos em folhas de cálculo e não havia visibilidade sobre o desempenho da equipa.",
+      "Necessidade de uma presença digital forte e profissional na internet.",
     solution:
-      "Desenvolvemos uma plataforma centralizada com dashboard em tempo real, gestão de pipeline visual drag-and-drop, e relatórios automáticos. A equipa passou a ter visibilidade completa sobre todas as oportunidades e métricas de desempenho.",
+      "Desenvolvemos um website moderno, rápido e totalmente responsivo com foco em apresentação de trabalhos e geração de contactos.",
     results: [
-      "Aumento de 40% na taxa de conversão",
-      "Redução de 60% no tempo de follow-up",
-      "Visibilidade total sobre pipeline de vendas",
-      "Relatórios automáticos semanais",
+      "Presença online profissional",
+      "Otimizado para motores de busca",
+      "Carregamento rápido e responsivo",
+      "Formulário de contacto integrado",
     ],
-    tags: ["React", "Node", "MySQL", "API"],
-    category: "plataforma",
-    duration: "3 meses",
-    year: "2024",
-  },
-  {
-    id: "sistema-reservas",
-    title: "Sistema de Reservas",
-    description: "Dashboard e backoffice para gestão de reservas com calendário e notificações.",
-    fullDescription: `Sistema completo de gestão de reservas desenvolvido para negócios que precisam de organizar agendamentos de forma eficiente.
-
-Inclui calendário interativo, gestão de disponibilidade, notificações por email e SMS, pagamentos online, e área de cliente para auto-gestão de reservas.`,
-    challenge:
-      "O cliente geria reservas por telefone e email, perdendo marcações e causando conflitos de horários. Não havia forma dos clientes verificarem disponibilidade ou fazerem marcações fora do horário de expediente.",
-    solution:
-      "Criámos um sistema de reservas online com calendário em tempo real, confirmações automáticas, e área de cliente. Os clientes podem agora reservar 24/7 e recebem lembretes automáticos.",
-    results: [
-      "Redução de 80% em no-shows",
-      "Aumento de 50% em reservas fora de horas",
-      "Eliminação de conflitos de agendamento",
-      "Automatização de comunicações",
-    ],
-    tags: ["React", "Node", "Dashboard"],
-    category: "plataforma",
-    duration: "2 meses",
-    year: "2024",
-  },
-  {
-    id: "website-institucional",
-    title: "Website Institucional Premium",
-    description: "Site moderno e responsivo com foco em conversão para empresa de consultoria.",
-    fullDescription: `Website institucional de alta qualidade desenvolvido para uma empresa de consultoria que precisava de transmitir credibilidade e gerar leads qualificados.
-
-O site inclui design premium responsivo, formulários de contacto otimizados, blog com SEO, integração com CRM, e landing pages para campanhas.`,
-    challenge:
-      "O website anterior era desatualizado, não era responsivo, e não convertia visitantes em leads. A empresa estava a perder oportunidades de negócio por falta de presença digital profissional.",
-    solution:
-      "Desenvolvemos um website moderno com foco em conversão, optimizado para SEO, com formulários estrategicamente posicionados e integração com o CRM da empresa para gestão automática de leads.",
-    results: [
-      "Aumento de 200% em leads gerados",
-      "Tempo médio no site aumentou 150%",
-      "Posicionamento top 3 no Google",
-      "Taxa de conversão de 5.2%",
-    ],
-    tags: ["React", "SEO", "Performance"],
+    tags: ["React", "Next.js", "Tailwind"],
     category: "website",
-    duration: "6 semanas",
+    duration: "2 semanas",
     year: "2024",
+    url: "https://babipereira.orpheon.pt",
+    image: "/projects/babipereira.jpg",
+  },
+  {
+    id: "franciscodesousa",
+    title: "Francisco de Sousa",
+    description: "Portfólio pessoal e apresentação profissional.",
+    fullDescription: `Website de portfólio desenvolvido com as últimas tecnologias web para apresentação de trabalhos e experiência profissional.
+      Inclui seções de projectos, skills, e formulário de contacto direto.`,
+    challenge:
+      "Criar uma presença digital impactante e fácil de navegar.",
+    solution:
+      "Desenvolvemos um site moderno com design elegante, animações suaves e navegação intuitiva.",
+    results: [
+      "Portfólio profissional online",
+      "Melhor apresentação de trabalhos",
+      "Facilidade no contacto direto",
+      "Visibilidade profissional aumentada",
+    ],
+    tags: ["React", "Next.js", "Tailwind"],
+    category: "website",
+    duration: "2 semanas",
+    year: "2024",
+    url: "https://franciscodesousa.orpheon.pt",
+    image: "/projects/franciscodesousa.jpg",
+  },
+  {
+    id: "palacebc",
+    title: "Palace BC",
+    description: "Website corporativo com apresentação de serviços e soluções.",
+    fullDescription: `Website corporativo desenvolvido com design profissional para apresentação de serviços, produtos e soluções de negócio.
+      Inclui páginas de serviços detalhadas, portfólio de clientes, contactos regionais, e formulários de pedido de orçamento.`,
+    challenge:
+      "Necessidade de modernizar a presença digital e melhorar a comunicação com potenciais clientes.",
+    solution:
+      "Desenvolvemos um site corporativo robusto, com design profissional e estrutura clara que facilita a navegação e conversão de visitantes.",
+    results: [
+      "Presença corporativa fortalecida",
+      "Melhor comunicação de serviços",
+      "Facilidade na geração de leads",
+      "Estrutura escalável para futuras expansões",
+    ],
+    tags: ["React", "Next.js", "Tailwind"],
+    category: "website",
+    duration: "3 semanas",
+    year: "2024",
+    url: "https://palacebc.orpheon.pt",
+    image: "/projects/palacebc.jpg",
+  },
+  {
+    id: "a5tower",
+    title: "A5 Tower",
+    description: "Website para empresa com apresentação de produtos e contactos.",
+    fullDescription: `Website profissional desenvolvido para apresentação de produtos, serviços e informações de contacto da empresa.
+      Inclui catálogo de produtos, informações sobre a empresa, formulário de contacto, e otimização para SEO.`,
+    challenge:
+      "Criar uma presença digital clara e eficiente para facilitar contacto com clientes.",
+    solution:
+      "Desenvolvemos um website simples mas eficaz, com design limpo, navegação intuitiva e chamadas à ação claras.",
+    results: [
+      "Presença online consolidada",
+      "Aumento de contactos recebidos",
+      "Melhor acessibilidade de informações",
+      "Website otimizado para SEO",
+    ],
+    tags: ["React", "Next.js", "Tailwind"],
+    category: "website",
+    duration: "2 semanas",
+    year: "2024",
+    url: "https://a5tower.orpheon.pt",
+    image: "/projects/a5tower.jpg",
   },
   {
     id: "loja-online",
     title: "Loja Online",
     description: "E-commerce completo com pagamentos, gestão de stock e integração com transportadoras.",
     fullDescription: `Loja online completa desenvolvida para uma marca que pretendia expandir as vendas para o digital com uma experiência de compra premium.
-
-Inclui catálogo de produtos avançado, checkout otimizado, múltiplos métodos de pagamento, gestão de stock em tempo real, e integração com transportadoras para tracking automático.`,
+      Inclui catálogo de produtos avançado, checkout otimizado, múltiplos métodos de pagamento, gestão de stock em tempo real, e integração com transportadoras para tracking automático.`,
     challenge:
       "A marca vendia apenas em loja física e queria expandir para o online, mas precisava de uma solução que integrasse com o seu sistema de gestão existente e oferecesse uma experiência de compra premium.",
     solution:
@@ -92,8 +117,7 @@ Inclui catálogo de produtos avançado, checkout otimizado, múltiplos métodos 
     title: "Portal / Área de Cliente",
     description: "Área reservada com autenticação, documentos e comunicação com a empresa.",
     fullDescription: `Portal de cliente desenvolvido para uma empresa de serviços que precisava de centralizar toda a comunicação e documentação com os seus clientes.
-
-Inclui área segura com autenticação, gestão de documentos, sistema de tickets para suporte, histórico de faturas, e notificações em tempo real.`,
+      Inclui área segura com autenticação, gestão de documentos, sistema de tickets para suporte, histórico de faturas, e notificações em tempo real.`,
     challenge:
       "A comunicação com clientes era feita por email, perdendo-se informação importante. Os clientes não tinham acesso fácil aos seus documentos e faturas, e a equipa de suporte estava sobrecarregada com pedidos simples.",
     solution:
@@ -114,8 +138,7 @@ Inclui área segura com autenticação, gestão de documentos, sistema de ticket
     title: "Landing Page de Conversão",
     description: "Página otimizada para campanhas de marketing com A/B testing e tracking.",
     fullDescription: `Landing page de alta conversão desenvolvida para campanhas de marketing digital com foco em geração de leads qualificados.
-
-Inclui design otimizado para conversão, formulários multi-step, A/B testing integrado, tracking avançado com pixels, e integração com ferramentas de automação de marketing.`,
+      Inclui design otimizado para conversão, formulários multi-step, A/B testing integrado, tracking avançado com pixels, e integração com ferramentas de automação de marketing.`,
     challenge:
       "As campanhas de marketing não estavam a converter bem porque direcionavam para o website principal. Era necessária uma página dedicada com foco total na conversão da oferta específica.",
     solution:
