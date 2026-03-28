@@ -189,7 +189,7 @@ export const translations = {
             "Formulário de contacto + WhatsApp",
             "Hosting + SSL incluído",
             "Backups semanais",
-            "1 pedido pequeno/mês (ajuste de texto/imagem)",
+            "1 pedido (pequenas melhorias)/mês",
           ],
         },
         {
@@ -690,7 +690,7 @@ export const translations = {
             "Contact form + WhatsApp",
             "Hosting + SSL included",
             "Weekly backups",
-            "1 small request/month (text/image adjustment)",
+            "1 request/month (small improvements)",
           ],
         },
         {
