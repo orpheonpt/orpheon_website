@@ -23,10 +23,52 @@ export function Contact() {
     need: "",
     message: "",
   })
+  const [isLoading, setIsLoading] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formState)
+    setIsLoading(true)
+    setSubmitStatus(null)
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formState),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: 'success',
+          message: 'Mensagem enviada com sucesso! Entraremos em contacto em breve.',
+        })
+        setFormState({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          need: "",
+          message: "",
+        })
+      } else {
+        setSubmitStatus({
+          type: 'error',
+          message: data.error || 'Erro ao enviar mensagem. Tenta novamente.',
+        })
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Erro ao enviar mensagem. Tenta novamente.',
+      })
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -118,9 +160,21 @@ export function Contact() {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full">
-                    {t.contact.form.submit}
+                  <Button type="submit" size="lg" className="w-full" disabled={isLoading}>
+                    {isLoading ? 'Enviando...' : t.contact.form.submit}
                   </Button>
+
+                  {submitStatus && (
+                    <div
+                      className={`p-4 rounded-lg text-sm ${
+                        submitStatus.type === 'success'
+                          ? 'bg-green-500/10 text-green-700 dark:text-green-400'
+                          : 'bg-red-500/10 text-red-700 dark:text-red-400'
+                      }`}
+                    >
+                      {submitStatus.message}
+                    </div>
+                  )}
                 </form>
               </CardContent>
             </Card>
@@ -132,17 +186,19 @@ export function Contact() {
                 <h3 className="font-semibold mb-4">{t.contact.quickContacts}</h3>
 
                 <Link
-                  href="mailto:ola@orpheon.studio"
+                  href="mailto:geral@orpheon.pt"
                   className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
-                  <span>ola@orpheon.studio</span>
+                  <span>geral@orpheon.pt</span>
                 </Link>
 
                 <Link
-                  href="https://wa.me/351XXXXXXXXX"
+                  href="https://wa.me/351917692211?text=Olá,%20gostaria%20de%20saber%20mais%20informações%20sobre%20os%20vossos%20serviços"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -172,7 +228,7 @@ export function Contact() {
                   </div>
                 </div>
                 <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="#">{t.contact.bookCall}</Link>
+                  <Link href="https://calendly.com/francisco-s-santos77/30min" target="_blank" rel="noopener noreferrer">{t.contact.bookCall}</Link>
                 </Button>
               </CardContent>
             </Card>

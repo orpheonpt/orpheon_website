@@ -65,7 +65,7 @@ export function Projects() {
         <div className="mb-12">
           <Carousel className="w-full">
             <CarouselContent className="-ml-2 md:-ml-4">
-              {filteredProjects.slice(0, 6).map((project) => (
+              {filteredProjects.slice(0, 12).map((project) => (
                 <CarouselItem key={project.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                   <Card className="group bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col h-full">
                     <div className="aspect-video bg-secondary/50 relative flex-shrink-0 overflow-hidden">

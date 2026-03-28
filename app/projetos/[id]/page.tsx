@@ -147,12 +147,14 @@ export default function CaseStudyPage() {
                     <Button asChild size="lg">
                       <Link href="/#contacto">{t.caseStudy.requestQuote}</Link>
                     </Button>
-                    <Button asChild variant="outline" size="lg">
-                      <Link href="#" className="gap-2">
-                        <ExternalLink className="w-4 h-4" />
-                        {t.caseStudy.viewDemo}
-                      </Link>
-                    </Button>
+                    {project.url && (
+                      <Button asChild variant="outline" size="lg">
+                        <Link href={project.url} target="_blank" rel="noopener noreferrer" className="gap-2">
+                          <ExternalLink className="w-4 h-4" />
+                          {t.caseStudy.viewDemo}
+                        </Link>
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>

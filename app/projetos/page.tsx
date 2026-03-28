@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -53,10 +54,19 @@ export default function ProjectsPage() {
                   key={project.id}
                   className="group bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col"
                 >
-                  <div className="aspect-video bg-secondary/50 relative flex-shrink-0">
-                    <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/50">
-                      <FileText className="w-12 h-12" />
-                    </div>
+                  <div className="aspect-video bg-secondary/50 relative flex-shrink-0 overflow-hidden">
+                    {project.image ? (
+                      <Image
+                        src={project.image}
+                        alt={getProjectTitle(project.id)}
+                        fill
+                        className="object-cover"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/50">
+                        <FileText className="w-12 h-12" />
+                      </div>
+                    )}
                   </div>
                   <CardContent className="pt-6 flex flex-col flex-1">
                     <div className="flex flex-wrap gap-2 mb-3">
@@ -75,12 +85,14 @@ export default function ProjectsPage() {
                           {t.projects.caseStudy}
                         </Link>
                       </Button>
-                      <Button asChild size="sm" className="w-full">
-                        <Link href="#" className="gap-1.5">
-                          <ExternalLink className="w-4 h-4" />
-                          {t.projects.openDemo}
-                        </Link>
-                      </Button>
+                      {project.url && (
+                        <Button asChild size="sm" className="w-full">
+                          <Link href={project.url} target="_blank" rel="noopener noreferrer" className="gap-1.5">
+                            <ExternalLink className="w-4 h-4" />
+                            {t.projects.openDemo}
+                          </Link>
+                        </Button>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
