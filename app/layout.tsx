@@ -13,7 +13,20 @@ export const metadata: Metadata = {
   description:
     "Criamos websites e plataformas à medida com manutenção incluída. Desenvolvimento web fullstack em Portugal - React, Node, PHP, MySQL.",
   keywords: ["web development", "websites", "portugal", "desenvolvimento web", "react", "node", "plataformas"],
-    generator: 'v0.app'
+    generator: 'v0.app',
+    icons: {
+      icon: '/icons/favicon.ico',
+      apple: '/icons/apple-touch-icon.png',
+    },
+    openGraph: {
+      images: [
+        {
+          url: '/icons/android-chrome-512x512.png',
+          width: 512,
+          height: 512,
+        }
+      ]
+    }
 }
 
 export const viewport: Viewport = {

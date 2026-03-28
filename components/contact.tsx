@@ -228,7 +228,7 @@ export function Contact() {
                   </div>
                 </div>
                 <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="https://calendly.com/francisco-s-santos77/30min" target="_blank" rel="noopener noreferrer">{t.contact.bookCall}</Link>
+                  <Link href="https://calendly.com/francisco-s-santos77" target="_blank" rel="noopener noreferrer">{t.contact.bookCall}</Link>
                 </Button>
               </CardContent>
             </Card>
